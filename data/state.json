@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-19T02:18:35+00:00",
+ "generated": "2026-08-19T02:22:59+00:00",
  "count": {
   "parks_under_alert": 182,
   "full_closures": 3,
-  "fires": 28,
+  "fires": 29,
   "fedreg_7d": 2,
   "red_flag": 2
  },
@@ -48,6 +48,61 @@
   },
   {
    "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
+   "title": "MTFNF Silvertip Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
+   "unit": "Flathead National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Silvertip Fire was started by lightning in the Spotted Bear Ranger District of the Flathead National Forest, approximately 15 miles southeast of Spotted Bear Ranger Station, near Silvertip Mountain. The fire was detected by aircraft on July 24, 2026 while conducting recon on another reported fire. The fire is burning in heavy timber on steep slopes with standing dead and down trees.A Forest Area Closure is in place for the majority of the upper Spotted Bear River drainage for public and firefighter safety: https://www.fs.usda.gov/r01/flathead/alertsReconnaissance flights continue over the "
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "title": "ORFWF Wrights Spring",
+   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "unit": "Fremont-Winema National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "title": "ORUMF Paradise Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, OR"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "title": "UTMLF Black Canyon",
+   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "unit": "Manti-Lasal National Forest",
+   "state": "Utah",
+   "acres": 0,
+   "federal": true,
+   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govReeder property owners were able to return to their cabins today with proper identification. Reeder Subdivision is now in the \u201cSet\u201d stage of evacuation orders. Structure protection resources will remain in the subdivision for the time being. Residents were able to return due to the completion of contingency line near Reeder Subdivision combined with water drops by air r"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "title": "MTFNF Skillet Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "unit": "Flathead National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
+  },
+  {
+   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
    "title": "WAGPF High Lava Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
@@ -89,17 +144,6 @@
    "acres": 0,
    "federal": true,
    "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "title": "ORUMF Paradise Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, OR"
   },
   {
    "kind": "fire",
@@ -235,17 +279,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "title": "ORFWF Wrights Spring",
-   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "unit": "Fremont-Winema National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
    "title": "NMSNF Frijoles Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
@@ -312,17 +345,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
-   "title": "MTFNF Silvertip Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
-   "unit": "Flathead National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Silvertip Fire was started by lightning in the Spotted Bear Ranger District of the Flathead National Forest, approximately 15 miles southeast of Spotted Bear Ranger Station, near Silvertip Mountain. The fire was detected by aircraft on July 24, 2026 while conducting recon on another reported fire. The fire is burning in heavy timber on steep slopes with standing dead and down trees.A Forest Area Closure is in place for the majority of the upper Spotted Bear River drainage for public and firefighter safety: https://www.fs.usda.gov/r01/flathead/alertsReconnaissance flights continue over the "
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
    "title": "MTBDF Moose Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
@@ -331,17 +353,6 @@
    "acres": 0,
    "federal": true,
    "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels, with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "title": "UTMLF Black Canyon",
-   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "unit": "Manti-Lasal National Forest",
-   "state": "Utah",
-   "acres": 0,
-   "federal": true,
-   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govReeder property owners were able to return to their cabins today with proper identification. Reeder Subdivision is now in the \u201cSet\u201d stage of evacuation orders. Structure protection resources will remain in the subdivision for the time being. Residents were able to return due to the completion of contingency line near Reeder Subdivision combined with water drops by air r"
   }
  ],
  "fedreg": [

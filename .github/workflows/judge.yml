@@ -1,0 +1,46 @@
+name: judge
+
+# The editorial pass. Twice a day: ~6am and ~4pm Pacific.
+# Picks accumulate in data/judge.json and are never dropped for being old —
+# the board must not assume anything has been read.
+on:
+  schedule:
+    - cron: '0 13 * * *'
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: register-data
+  cancel-in-progress: false
+
+jobs:
+  judge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+      - name: Run the judge
+        env:
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/judge.py
+      - name: Commit
+        run: |
+          git config user.name  "the-register-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- data/judge.json; then
+            echo "no change"; exit 0
+          fi
+          git add data/judge.json
+          git commit -m "judge: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1

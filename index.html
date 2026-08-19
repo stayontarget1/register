@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b5e3f'/%3E%3Cpath d='M16 5 L26 26 H6 Z' fill='%23fff'/%3E%3Cpath d='M16 12 L21 22 H11 Z' fill='%231b5e3f'/%3E%3C/svg%3E">
+<title>The Register — National Parks · National Forests · Public Lands</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* ── Header ── */
+  .header {
+    border-bottom: 2px solid #111;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .header-left { display: flex; align-items: center; gap: 10px; }
+
+  .site-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1b5e3f;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+
+  .site-name:hover { text-decoration: underline; }
+
+  .tagline { font-size: 11px; color: #888; font-style: italic; }
+
+  .header-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+  .header-controls button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.15s;
+  }
+
+  .header-controls button:hover { background: #f0f0f0; border-color: #999; }
+  .header-controls button.active { background: #111; color: #fff; border-color: #111; }
+
+  .last-updated { font-size: 10px; color: #aaa; }
+
+  /* ── Time Filter Bar ── */
+  .time-filter { display: flex; gap: 0; border: 1px solid #ccc; border-radius: 3px; overflow: hidden; }
+  .time-filter button { border: none; border-right: 1px solid #ccc; border-radius: 0; padding: 3px 7px; font-size: 10px; font-weight: 600; }
+  .time-filter button:last-child { border-right: none; }
+  .time-filter button.active { background: #111; color: #fff; }
+
+  /* ── THE COUNT ── */
+  .count-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fbfbf9;
+    padding: 0 4px;
+  }
+
+  .count-item {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    border-right: 1px solid #ececec;
+  }
+
+  .count-item:last-of-type { border-right: none; }
+  .count-item:hover { background: #f2f2ee; }
+  .count-item.open { background: #ecece6; }
+
+  .count-label {
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #999;
+    font-weight: 600;
+  }
+
+  .count-value {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1b5e3f;
+  }
+
+  .count-value.alarm { color: #c00; }
+  .count-stamp { margin-left: auto; padding: 6px 10px; font-size: 9.5px; color: #bbb; }
+
+  .count-drawer {
+    display: none;
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fbfbf9;
+    padding: 8px 14px 10px;
+    max-height: 320px;
+    overflow-y: auto;
+  }
+
+  .count-drawer.open { display: block; }
+  .drawer-row { padding: 3px 0; border-bottom: 1px solid #efefe9; font-size: 12px; }
+  .drawer-row:last-child { border-bottom: none; }
+  .drawer-row a { color: #1a1a1a; text-decoration: none; }
+  .drawer-row a:hover { color: #1b5e3f; text-decoration: underline; }
+  .drawer-unit { font-weight: 600; }
+  .drawer-meta { font-size: 10px; color: #aaa; margin-left: 5px; }
+  .drawer-empty { font-size: 11px; color: #bbb; font-style: italic; }
+
+  /* ── Feed Grid ── */
+  .feed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0; padding: 0; }
+
+  /* ── Feed Column ── */
+  .feed-column { border-right: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; min-height: 200px; }
+
+  .feed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .feed-header-left { display: flex; align-items: center; gap: 6px; }
+
+  .feed-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .feed-title.judge-title { color: #1b5e3f; }
+  .feed-title.hot-title { color: #c00; }
+  .feed-title.reddit-title { color: #ff4500; }
+  .feed-title.gov-title { color: #1a6dcc; }
+
+  .feed-link { font-size: 10px; color: #1b5e3f; text-decoration: none; font-weight: 600; }
+  .feed-link:hover { text-decoration: underline; }
+
+  /* ── Health Indicator ── */
+  .health-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .health-green { background: #34a853; }
+  .health-yellow { background: #f9ab00; }
+  .health-red { background: #ea4335; }
+
+  /* ── Section Divider ── */
+  .section-divider {
+    grid-column: 1 / -1;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+  }
+
+  /* ── Feed Items ── */
+  .feed-items { list-style: none; padding: 0; }
+  .feed-item { border-bottom: 1px solid #f0f0f0; }
+  .feed-item:last-child { border-bottom: none; }
+  .feed-item.hidden-by-time { display: none; }
+
+  .feed-item a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 12.5px;
+    line-height: 1.35;
+    transition: background 0.1s;
+  }
+
+  .feed-item a:hover { background: #f5f5f5; color: #1b5e3f; }
+  .feed-item a:visited { color: #888; }
+
+  .feed-item .item-age { font-size: 10px; color: #aaa; margin-left: 4px; }
+  .feed-item .item-source { font-size: 9px; color: #b0b0b0; margin-left: 4px; font-style: italic; }
+  .feed-item .item-badge { font-size: 9px; color: #1a6dcc; margin-left: 4px; font-weight: 700; }
+
+  /* ── The Judge ── */
+  .judge-item a { padding: 7px 10px; }
+  .judge-headline { display: block; font-weight: 600; font-size: 12.5px; line-height: 1.3; }
+  .judge-why { display: block; font-size: 11.5px; color: #666; line-height: 1.4; margin-top: 3px; font-style: italic; }
+  .judge-item a:hover .judge-why { color: #555; }
+  .judge-meta { display: block; margin-top: 4px; font-size: 9px; color: #aaa; text-transform: uppercase; letter-spacing: 0.4px; }
+  .judge-tag { color: #1b5e3f; font-weight: 700; }
+  .judge-tag.t-staffing, .judge-tag.t-budget, .judge-tag.t-closure { color: #c00; }
+  .judge-tag.t-pattern { color: #e67300; }
+  .judge-hedge { color: #bbb; font-style: italic; text-transform: none; letter-spacing: 0; }
+
+  /* ── Keyword Highlights ── */
+  .kw { font-weight: 700; }
+  .kw-red { color: #c00; }
+  .kw-orange { color: #e67300; }
+  .kw-blue { color: #1a6dcc; }
+
+  /* ── Loading / Error ── */
+  .feed-loading { padding: 12px 10px; color: #999; font-size: 11px; font-style: italic; }
+  .feed-error { padding: 12px 10px; color: #c00; font-size: 11px; }
+  .feed-note { padding: 12px 10px; color: #999; font-size: 11px; line-height: 1.5; }
+  .feed-empty-filter { padding: 12px 10px; color: #bbb; font-size: 11px; font-style: italic; display: none; }
+
+  /* ── Dark Mode ── */
+  body.dark { background: #111; color: #ccc; }
+  body.dark .header { border-bottom-color: #333; }
+  body.dark .site-name { color: #4caf7d; }
+  body.dark .count-strip { background: #161616; border-bottom-color: #2a2a2a; }
+  body.dark .count-item { border-right-color: #242424; }
+  body.dark .count-item:hover { background: #1e1e1e; }
+  body.dark .count-item.open { background: #232323; }
+  body.dark .count-value { color: #4caf7d; }
+  body.dark .count-value.alarm { color: #f55; }
+  body.dark .count-drawer { background: #161616; border-bottom-color: #2a2a2a; }
+  body.dark .drawer-row { border-bottom-color: #232323; }
+  body.dark .drawer-row a { color: #bbb; }
+  body.dark .drawer-row a:hover { color: #4caf7d; }
+  body.dark .feed-column { border-right-color: #2a2a2a; border-bottom-color: #2a2a2a; }
+  body.dark .feed-header { background: #1a1a1a; border-bottom-color: #2a2a2a; }
+  body.dark .feed-title { color: #ddd; }
+  body.dark .feed-title.judge-title { color: #4caf7d; }
+  body.dark .feed-link { color: #4caf7d; }
+  body.dark .section-divider { background: #1a1a1a; border-bottom-color: #2a2a2a; color: #666; }
+  body.dark .feed-item { border-bottom-color: #1e1e1e; }
+  body.dark .feed-item a { color: #bbb; }
+  body.dark .feed-item a:visited { color: #666; }
+  body.dark .feed-item a:hover { background: #1a1a1a; color: #4caf7d; }
+  body.dark .judge-why { color: #8a8a8a; }
+  body.dark .judge-tag { color: #4caf7d; }
+  body.dark .judge-tag.t-staffing, body.dark .judge-tag.t-budget, body.dark .judge-tag.t-closure { color: #f55; }
+  body.dark .kw-red { color: #f55; }
+  body.dark .kw-orange { color: #f90; }
+  body.dark .kw-blue { color: #5aadff; }
+  body.dark .header-controls button { border-color: #444; color: #aaa; }
+  body.dark .header-controls button:hover { background: #222; border-color: #666; }
+  body.dark .header-controls button.active { background: #ddd; color: #111; border-color: #ddd; }
+  body.dark .time-filter { border-color: #444; }
+  body.dark .time-filter button { border-right-color: #444; }
+
+  /* ── Compact Mode ── */
+  body.compact .feed-item a { padding: 3px 10px; font-size: 11.5px; }
+  body.compact .judge-why { display: none; }
+
+  /* ── Field Note ── */
+  .field-note { border-top: 2px solid #111; padding: 14px 16px; max-width: 720px; margin: 0 auto; }
+  .field-note-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .field-note-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #999; }
+  .field-note-day { font-size: 10px; color: #bbb; margin-left: auto; }
+  .field-note-title { font-size: 14px; font-weight: 700; color: #1b5e3f; margin-bottom: 4px; line-height: 1.3; }
+  .field-note-text { font-size: 12.5px; line-height: 1.5; color: #444; margin-bottom: 6px; }
+  .field-note-link { font-size: 11px; color: #1a6dcc; text-decoration: none; }
+  .field-note-link:hover { text-decoration: underline; }
+
+  body.dark .field-note { border-top-color: #333; }
+  body.dark .field-note-title { color: #4caf7d; }
+  body.dark .field-note-text { color: #aaa; }
+  body.dark .field-note-link { color: #5aadff; }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .feed-grid { grid-template-columns: 1fr; }
+    .header { flex-direction: column; align-items: flex-start; }
+    .count-stamp { display: none; }
+  }
+  @media (min-width: 1400px) { .feed-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1800px) { .feed-grid { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <a href="#" class="site-name" onclick="location.reload(); return false;">The Register</a>
+    <span class="tagline">National Parks · National Forests · Public Lands</span>
+  </div>
+  <div class="header-controls">
+    <div class="time-filter" id="timeFilter">
+      <button onclick="setTimeFilter(6)" id="tf-6">6h</button>
+      <button onclick="setTimeFilter(12)" id="tf-12">12h</button>
+      <button onclick="setTimeFilter(24)" id="tf-24">24h</button>
+      <button onclick="setTimeFilter(0)" id="tf-0" class="active">All</button>
+    </div>
+    <button onclick="toggleDark()" id="darkBtn">Dark</button>
+    <button onclick="toggleCompact()" id="compactBtn">Compact</button>
+    <button onclick="togglePaywall()" id="paywallBtn" title="Open paywalled articles through removepaywall.com">🔓 Paywall</button>
+    <button onclick="refreshAll()">↻ Refresh</button>
+    <span class="last-updated" id="lastUpdated"></span>
+  </div>
+</div>
+
+<div class="count-strip" id="countStrip"></div>
+<div class="count-drawer" id="countDrawer"></div>
+
+<div class="feed-grid" id="feedGrid"></div>
+
+<div class="field-note" id="fieldNote">
+  <div class="field-note-header">
+    <span class="field-note-label">Field Note</span>
+    <span class="field-note-day" id="fieldNoteDay"></span>
+  </div>
+  <div class="field-note-title" id="fieldNoteTitle"></div>
+  <div class="field-note-text" id="fieldNoteText"></div>
+  <a class="field-note-link" id="fieldNoteLink" href="#" target="_blank" rel="noopener">Read more</a>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+// CONFIGURATION
+// ═══════════════════════════════════════════
+
+// Written by the GitHub Action. Same-origin, so these two need no CORS proxy —
+// the most important column on the page is also the most reliable one.
+const JUDGE_URL = 'data/judge.json';
+const STATE_URL = 'data/state.json';
+
+// Each column may merge several feeds. Sparse sources (advocacy orgs posting
+// 2-4x a week) are merged so the column stays dense; prolific ones stand alone.
+const RSS_COLUMNS = [
+  { title: "Natl Parks Traveler", site: "https://www.nationalparkstraveler.org", max: 10,
+    feeds: [{ url: "https://www.nationalparkstraveler.org/rss.xml" }] },
+  { title: "High Country News", site: "https://www.hcn.org", max: 10,
+    feeds: [{ url: "https://www.hcn.org/feed/" }] },
+  { title: "The Land Desk", site: "https://www.landdesk.org", max: 10,
+    feeds: [{ url: "https://www.landdesk.org/feed" }] },
+  // Wildfire Today would be the natural pick here, but it serves an
+  // interstitial captcha to datacenter IPs, so no CORS proxy can reach it.
+  // InciWeb is the authoritative federal incident feed and is unblocked.
+  { title: "🔥 Fire", site: "https://inciweb.wildfire.gov", max: 12,
+    feeds: [
+      { url: "https://inciweb.wildfire.gov/incidents/rss.xml", label: "InciWeb" },
+      { url: "https://www.iawfonline.org/feed/", label: "IAWF" }
+    ] },
+  { title: "Western Priorities", site: "https://westernpriorities.org", max: 10,
+    feeds: [{ url: "https://westernpriorities.org/feed/" }] },
+  { title: "🐕 Watchdogs", site: "https://peer.org", max: 14,
+    feeds: [
+      { url: "https://peer.org/feed/", label: "PEER" },
+      { url: "https://wildernesswatch.org/feed/", label: "Wilderness Watch" },
+      { url: "https://www.wilderness.org/rss.xml", label: "Wilderness Society" },
+      { url: "https://www.outdooralliance.org/blog?format=rss", label: "Outdoor Alliance" }
+    ] },
+  { title: "Wider Lens", site: "https://therevelator.org", max: 12,
+    feeds: [
+      { url: "https://therevelator.org/feed/", label: "Revelator" },
+      { url: "https://grist.org/feed/", label: "Grist" },
+      { url: "https://www.outsideonline.com/feed/", label: "Outside" }
+    ] }
+];
+
+const REDDIT_COLUMNS = [
+  { title: "r/nationalparks", site: "https://www.reddit.com/r/nationalparks", max: 10,
+    subs: ["nationalparks", "NationalPark"] },
+  { title: "r/PublicLands", site: "https://www.reddit.com/r/PublicLands", max: 10,
+    subs: ["PublicLands", "WildernessBackpacking"] }
+];
+
+const EXCLUDED_DOMAINS = [
+  'nationalparkstraveler.org','hcn.org','landdesk.org','wildfiretoday.com',
+  'westernpriorities.org','peer.org','wildernesswatch.org','wilderness.org',
+  'outdooralliance.org','therevelator.org','grist.org','outsideonline.com',
+  'reddit.com','federalregister.gov','courtlistener.com'
+];
+
+const HOT_QUERIES = [
+  '"national park" closure OR closed',
+  '"national forest" closure OR closed',
+  '"Park Service" staffing OR layoffs OR vacancies',
+  '"Forest Service" staffing OR layoffs OR firings',
+  '"public lands" sell-off OR transfer OR sale',
+  '"national monument" boundary OR shrink OR review',
+  'national park entrance fee OR reservation system',
+  '"park ranger" fired OR quit OR shortage',
+  'national park visitation record OR overcrowding',
+  '"deferred maintenance" national park backlog',
+  'Interior Department public lands policy',
+  '"Forest Service" timber sale OR logging',
+  'oil OR gas leasing near national park',
+  'mining claim national forest OR monument',
+  'grizzly OR wolf OR bison delisting OR management',
+  'wildfire "national forest" evacuation',
+  '"Antiquities Act" monument',
+  'national park concessions OR privatization',
+  '"Wilderness Act" OR "roadless rule"',
+  'national park water OR sewage OR infrastructure failure',
+  'national park search and rescue death OR fatality',
+  '"Bureau of Land Management" public lands rule',
+  'national park air quality OR pollution',
+  'tribal co-management national park OR monument',
+  'national park climate change impact',
+  '"recreation.gov" permit OR reservation change',
+  'national forest travel management OR OHV rule',
+  'national park budget cut OR appropriations',
+  'national park volunteer OR nonprofit gap funding',
+  'national seashore OR lakeshore closure'
+];
+
+const AGENCY_QUERIES = ['site:nps.gov', 'site:fs.usda.gov', 'site:doi.gov public lands'];
+
+const CORS_PROXIES = [
+  url => `https://rss-proxy.large-lake4645.workers.dev/?url=${encodeURIComponent(url)}`,
+  url => `https://proxy.corsfix.com/?${url}`,
+  url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+];
+
+// ── Keyword Highlights ──
+// Word-boundary matched so "Ring" won't match inside "hiring".
+const HIGHLIGHT_KEYWORDS = [
+  // Threats — red
+  { word: 'closure', color: 'red' },
+  { word: 'closed', color: 'red' },
+  { word: 'layoff', color: 'red' },
+  { word: 'layoffs', color: 'red' },
+  { word: 'fired', color: 'red' },
+  { word: 'staffing', color: 'red' },
+  { word: 'shortage', color: 'red' },
+  { word: 'budget cut', color: 'red' },
+  { word: 'sell-off', color: 'red' },
+  { word: 'sale', color: 'red' },
+  { word: 'privatization', color: 'red' },
+  { word: 'logging', color: 'red' },
+  { word: 'drilling', color: 'red' },
+  { word: 'leasing', color: 'red' },
+  { word: 'mining', color: 'red' },
+  { word: 'rescind', color: 'red' },
+  { word: 'shrink', color: 'red' },
+  { word: 'evacuation', color: 'red' },
+  { word: 'fatality', color: 'red' },
+  // Conditions — orange
+  { word: 'wildfire', color: 'orange' },
+  { word: 'containment', color: 'orange' },
+  { word: 'flood', color: 'orange' },
+  { word: 'rockfall', color: 'orange' },
+  { word: 'avalanche', color: 'orange' },
+  { word: 'grizzly', color: 'orange' },
+  { word: 'wolf', color: 'orange' },
+  { word: 'bison', color: 'orange' },
+  { word: 'smoke', color: 'orange' },
+  { word: 'drought', color: 'orange' },
+  { word: 'washout', color: 'orange' },
+  // Governance — blue
+  { word: 'Antiquities Act', color: 'blue' },
+  { word: 'Wilderness Act', color: 'blue' },
+  { word: 'NEPA', color: 'blue' },
+  { word: 'roadless', color: 'blue' },
+  { word: 'forest plan', color: 'blue' },
+  { word: 'Federal Register', color: 'blue' },
+  { word: 'superintendent', color: 'blue' },
+  { word: 'Interior', color: 'blue' },
+  { word: 'appropriations', color: 'blue' },
+  { word: 'rulemaking', color: 'blue' },
+  { word: 'lawsuit', color: 'blue' },
+  { word: 'injunction', color: 'blue' }
+];
+
+function highlightKeywords(text) {
+  let result = text;
+  const sorted = [...HIGHLIGHT_KEYWORDS].sort((a, b) => b.word.length - a.word.length);
+  sorted.forEach(kw => {
+    const escaped = kw.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b(${escaped})\\b`, 'gi');
+    result = result.replace(regex, `<span class="kw kw-${kw.color}">$1</span>`);
+  });
+  return result;
+}
+
+// ═══════════════════════════════════════════
+// TIME FILTER STATE
+// ═══════════════════════════════════════════
+let currentTimeFilter = 0;
+
+function setTimeFilter(hours) {
+  currentTimeFilter = hours;
+  document.querySelectorAll('.time-filter button').forEach(b => b.classList.remove('active'));
+  document.getElementById(`tf-${hours}`).classList.add('active');
+  applyTimeFilter();
+}
+
+function applyTimeFilter() {
+  const now = Date.now();
+  const cutoff = currentTimeFilter > 0 ? now - (currentTimeFilter * 3600 * 1000) : 0;
+
+  document.querySelectorAll('.feed-item[data-timestamp]').forEach(item => {
+    const ts = parseInt(item.getAttribute('data-timestamp'));
+    if (cutoff > 0 && ts < cutoff) item.classList.add('hidden-by-time');
+    else item.classList.remove('hidden-by-time');
+  });
+
+  document.querySelectorAll('.feed-column').forEach(col => {
+    const items = col.querySelectorAll('.feed-item');
+    const visible = col.querySelectorAll('.feed-item:not(.hidden-by-time)');
+    const emptyMsg = col.querySelector('.feed-empty-filter');
+    if (emptyMsg) emptyMsg.style.display = (items.length > 0 && visible.length === 0) ? 'block' : 'none';
+  });
+}
+
+// ═══════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function getDomain(url) {
+  try { return new URL(url).hostname.replace('www.', ''); } catch { return ''; }
+}
+
+function isExcludedDomain(url) {
+  const domain = getDomain(url);
+  return EXCLUDED_DOMAINS.some(d => domain.includes(d));
+}
+
+function shortDomain(url) {
+  return getDomain(url).replace(/\.com$|\.org$|\.net$|\.co$|\.io$|\.gov$/, '');
+}
+
+function parseDate(dateStr) {
+  if (!dateStr) return 0;
+  try { const d = new Date(dateStr); return isNaN(d) ? 0 : d.getTime(); } catch { return 0; }
+}
+
+function timeAgo(dateStr) {
+  if (!dateStr) return '';
+  try {
+    const date = new Date(dateStr);
+    if (isNaN(date)) return '';
+    const diff = Math.floor((Date.now() - date) / 1000);
+    if (diff < 60) return 'now';
+    if (diff < 3600) return `${Math.floor(diff / 60)}m`;
+    if (diff < 86400) return `${Math.floor(diff / 3600)}h`;
+    if (diff < 604800) return `${Math.floor(diff / 86400)}d`;
+    return `${Math.floor(diff / 604800)}w`;
+  } catch { return ''; }
+}
+
+async function fetchWithProxy(url) {
+  for (const proxy of CORS_PROXIES) {
+    try {
+      const res = await fetch(proxy(url), { signal: AbortSignal.timeout(10000) });
+      if (res.ok) {
+        const text = await res.text();
+        if (text && (text.includes('<item') || text.includes('<entry') || text.includes('<rss') || text.includes('<feed'))) return text;
+      }
+    } catch (e) {}
+  }
+  throw new Error('All proxies failed');
+}
+
+// NPS, Federal Register and CourtListener all send Access-Control-Allow-Origin,
+// so these go direct — no proxy, no dependency on someone else's uptime.
+async function fetchJSON(url) {
+  const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  return res.json();
+}
+
+// Same, but falls back through the proxy chain. CourtListener rate-limits
+// anonymous requests and intermittently answers 422, which would otherwise
+// blank the column for the rest of the session.
+async function fetchJSONResilient(url) {
+  try { return await fetchJSON(url); } catch (e) {}
+  for (const proxy of CORS_PROXIES) {
+    try {
+      const res = await fetch(proxy(url), { signal: AbortSignal.timeout(12000) });
+      if (res.ok) {
+        const t = await res.text();
+        if (t && t.trim().startsWith('{')) return JSON.parse(t);
+      }
+    } catch (e) {}
+  }
+  throw new Error('all sources failed');
+}
+
+function parseRSS(xml) {
+  // Some CMSes (Drupal, notably National Parks Traveler) emit HTML comments
+  // before the XML declaration. DOMParser treats that as a fatal parse error
+  // and silently returns zero items, so trim to the first real XML token.
+  const firstTag = ['<?xml', '<rss', '<feed'].reduce((best, m) => {
+    const i = xml.indexOf(m);
+    return (i >= 0 && i < best) ? i : best;
+  }, Infinity);
+  if (firstTag > 0 && firstTag !== Infinity) xml = xml.slice(firstTag);
+
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xml, "text/xml");
+  const items = [];
+  const rssItems = doc.querySelectorAll('item');
+  if (rssItems.length > 0) {
+    rssItems.forEach(item => {
+      const title = item.querySelector('title')?.textContent?.trim();
+      const link = item.querySelector('link')?.textContent?.trim();
+      const pubDate = item.querySelector('pubDate')?.textContent?.trim();
+      if (title && link) items.push({ title, link, pubDate });
+    });
+    return items;
+  }
+  doc.querySelectorAll('entry').forEach(entry => {
+    const title = entry.querySelector('title')?.textContent?.trim();
+    const linkEl = entry.querySelector('link[rel="alternate"], link');
+    const link = linkEl?.getAttribute('href');
+    const pubDate = entry.querySelector('published, updated')?.textContent?.trim();
+    if (title && link) items.push({ title, link, pubDate });
+  });
+  return items;
+}
+
+// Reddit's public .json API blocks datacenter IPs (every CORS proxy gets a 403),
+// so we read via Arctic Shift, a free archive that allows browser requests.
+async function fetchRedditJSON(sub, limit = 10) {
+  try {
+    const url = `https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=${encodeURIComponent(sub)}&sort=desc&limit=${limit + 3}`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(12000) });
+    if (!res.ok) return [];
+    const json = await res.json();
+    return Array.isArray(json && json.data) ? json.data : [];
+  } catch { return []; }
+}
+
+// ═══════════════════════════════════════════
+// FEED HEALTH TRACKING
+// ═══════════════════════════════════════════
+function updateHealth(colId, status, newestItemDate) {
+  const col = document.getElementById(colId);
+  if (!col) return;
+  const dot = col.querySelector('.health-dot');
+  if (!dot) return;
+  dot.className = 'health-dot';
+
+  if (status === 'error') {
+    dot.classList.add('health-red');
+    dot.title = 'Feed failed to load';
+    return;
+  }
+  if (newestItemDate) {
+    const hours = (Date.now() - new Date(newestItemDate).getTime()) / 3600000;
+    if (hours > 72) {
+      dot.classList.add('health-yellow');
+      dot.title = `Stale — newest item is ${Math.floor(hours)}h old`;
+    } else {
+      dot.classList.add('health-green');
+      dot.title = `Fresh — updated ${Math.floor(hours)}h ago`;
+    }
+  } else {
+    dot.classList.add('health-green');
+    dot.title = 'Loaded';
+  }
+}
+
+// ═══════════════════════════════════════════
+// ITEM RENDERING
+// ═══════════════════════════════════════════
+function makeItem(item) {
+  const li = document.createElement('li');
+  li.className = 'feed-item';
+  const ts = parseDate(item.pubDate);
+  if (ts) li.setAttribute('data-timestamp', ts);
+  let title = item.title;
+  if (title.length > 110) title = title.substring(0, 107) + '…';
+  const age = timeAgo(item.pubDate);
+  const ageSpan = age ? `<span class="item-age">${age}</span>` : '';
+  const srcSpan = item.sourceLabel ? `<span class="item-source">${esc(item.sourceLabel)}</span>` : '';
+  const badge = item.badge ? `<span class="item-badge">${esc(item.badge)}</span>` : '';
+  li.innerHTML = `<a href="${esc(item.link)}" target="_blank" rel="noopener" title="${esc(item.title)}">${badge}${highlightKeywords(esc(title))}${srcSpan}${ageSpan}</a>`;
+  return li;
+}
+
+function fillColumn(colId, items, opts = {}) {
+  const col = document.getElementById(colId);
+  if (!col) return;
+  const slot = col.querySelector('.feed-loading, .feed-error, .feed-items, .feed-note');
+  if (!items.length) {
+    if (slot) slot.outerHTML = `<div class="feed-error">${esc(opts.emptyMsg || 'No items found')}</div>`;
+    updateHealth(colId, 'error');
+    return;
+  }
+  const ul = document.createElement('ul');
+  ul.className = 'feed-items';
+  items.forEach(it => ul.appendChild(opts.make ? opts.make(it) : makeItem(it)));
+  if (slot) slot.replaceWith(ul);
+  updateHealth(colId, 'ok', items[0]?.pubDate);
+  applyTimeFilter();
+}
+
+function dedupe(items) {
+  const seenUrls = new Set(), seenTitles = new Set(), out = [];
+  for (const item of items) {
+    if (!item.link || !item.title) continue;
+    const u = item.link.split('?')[0].split('#')[0].toLowerCase();
+    if (seenUrls.has(u)) continue;
+    const t = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 40);
+    if (seenTitles.has(t)) continue;
+    seenUrls.add(u); seenTitles.add(t);
+    out.push(item);
+  }
+  return out;
+}
+
+function byNewest(a, b) { return (parseDate(b.pubDate) || 0) - (parseDate(a.pubDate) || 0); }
+
+// ═══════════════════════════════════════════
+// THE COUNT
+// ═══════════════════════════════════════════
+let STATE = null;
+let openDrawer = null;
+
+const COUNT_SPEC = [
+  { key: 'parks_under_alert', label: 'Units under alert', drawer: null },
+  { key: 'full_closures',     label: 'Full closures',     drawer: 'closures', alarm: true },
+  { key: 'fires',             label: 'Fires on fed land', drawer: 'fires' },
+  { key: 'fedreg_7d',         label: 'Fed Register 7d',   drawer: 'fedreg' },
+  { key: 'red_flag',          label: 'Red flag warnings', drawer: null }
+];
+
+async function loadCount() {
+  const strip = document.getElementById('countStrip');
+  try {
+    STATE = await fetchJSON(STATE_URL + '?t=' + Date.now());
+  } catch {
+    strip.innerHTML = `<span class="count-stamp">THE COUNT unavailable — the refresh job has not run yet.</span>`;
+    return;
+  }
+  const c = STATE.count || {};
+  strip.innerHTML = COUNT_SPEC.map(s => `
+    <button class="count-item" data-drawer="${s.drawer || ''}" ${s.drawer ? '' : 'disabled style="cursor:default"'}>
+      <span class="count-value ${s.alarm && c[s.key] > 0 ? 'alarm' : ''}">${c[s.key] ?? '—'}</span>
+      <span class="count-label">${s.label}</span>
+    </button>`).join('') +
+    `<span class="count-stamp">scanned ${STATE.totals?.alerts_scanned ?? '—'} alerts · ${timeAgo(STATE.generated)} ago</span>`;
+
+  strip.querySelectorAll('.count-item[data-drawer]').forEach(btn => {
+    const key = btn.getAttribute('data-drawer');
+    if (!key) return;
+    btn.addEventListener('click', () => toggleDrawer(key, btn));
+  });
+}
+
+function toggleDrawer(key, btn) {
+  const drawer = document.getElementById('countDrawer');
+  document.querySelectorAll('.count-item').forEach(b => b.classList.remove('open'));
+  if (openDrawer === key) {
+    drawer.classList.remove('open');
+    openDrawer = null;
+    return;
+  }
+  openDrawer = key;
+  btn.classList.add('open');
+  drawer.classList.add('open');
+
+  const rows = (STATE && STATE[key]) || [];
+  if (!rows.length) { drawer.innerHTML = `<div class="drawer-empty">Nothing here right now.</div>`; return; }
+
+  drawer.innerHTML = rows.map(r => {
+    if (key === 'closures') {
+      const href = r.url || `https://www.nps.gov/${r.code}/planyourvisit/conditions.htm`;
+      return `<div class="drawer-row"><a href="${esc(href)}" target="_blank" rel="noopener"><span class="drawer-unit">${esc(r.park)}</span> — ${esc(r.title)}</a><span class="drawer-meta">${esc(r.states)}</span></div>`;
+    }
+    if (key === 'fires') {
+      const acres = r.acres ? ` · ~${r.acres.toLocaleString()} acres` : '';
+      return `<div class="drawer-row"><a href="${esc(r.url)}" target="_blank" rel="noopener"><span class="drawer-unit">${esc(r.title)}</span> — ${esc(r.unit)}</a><span class="drawer-meta">${esc(r.state)}${acres}</span></div>`;
+    }
+    return `<div class="drawer-row"><a href="${esc(r.url)}" target="_blank" rel="noopener"><span class="drawer-unit">[${esc(r.agency)}]</span> ${esc(r.title)}</a><span class="drawer-meta">${esc(r.type)} · ${esc(r.date)}</span></div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════
+// RENDER GRID
+// ═══════════════════════════════════════════
+function column(id, titleHtml, rightHtml, loadingText) {
+  const col = document.createElement('div');
+  col.className = 'feed-column';
+  col.id = id;
+  col.innerHTML = `
+    <div class="feed-header">
+      <div class="feed-header-left">
+        <span class="health-dot"></span>
+        ${titleHtml}
+      </div>
+      ${rightHtml || ''}
+    </div>
+    <div class="feed-loading">${loadingText || 'Loading…'}</div>
+    <div class="feed-empty-filter">No items in this timeframe</div>
+  `;
+  return col;
+}
+
+function divider(text) {
+  const d = document.createElement('div');
+  d.className = 'section-divider';
+  d.textContent = text;
+  return d;
+}
+
+function renderGrid() {
+  const grid = document.getElementById('feedGrid');
+  grid.innerHTML = '';
+
+  grid.appendChild(divider('◆ Right Now'));
+  grid.appendChild(column('judge', '<span class="feed-title judge-title">⬥ The Judge</span>',
+    '<span style="font-size:9px;color:#aaa;">Opus 5 · 2×/day</span>', 'Reading the wire…'));
+  grid.appendChild(column('whats-hot', '<span class="feed-title hot-title">🔥 What\'s Hot</span>',
+    '<span style="font-size:9px;color:#aaa;">across the web</span>', 'Scanning…'));
+  grid.appendChild(column('fedreg', '<span class="feed-title gov-title">📜 Federal Register</span>',
+    '<a class="feed-link" href="https://www.federalregister.gov/agencies/national-park-service" target="_blank" rel="noopener">+</a>'));
+  grid.appendChild(column('agencies', '<span class="feed-title gov-title">📰 From the Agencies</span>',
+    '<span style="font-size:9px;color:#aaa;">nps · usfs · doi</span>'));
+
+  grid.appendChild(divider('◆ The Beat'));
+  RSS_COLUMNS.forEach((c, i) => grid.appendChild(column(`feed-${i}`,
+    `<span class="feed-title">${esc(c.title)}</span>`,
+    `<a class="feed-link" href="${esc(c.site)}" target="_blank" rel="noopener">+</a>`)));
+
+  grid.appendChild(divider('◆ Courts'));
+  grid.appendChild(column('courts', '<span class="feed-title">⚖️ Public Lands Litigation</span>',
+    '<a class="feed-link" href="https://www.courtlistener.com" target="_blank" rel="noopener">+</a>'));
+
+  grid.appendChild(divider('◆ From the Trail'));
+  REDDIT_COLUMNS.forEach((c, i) => grid.appendChild(column(`reddit-${i}`,
+    `<span class="feed-title reddit-title">${esc(c.title)}</span>`,
+    `<a class="feed-link" href="${esc(c.site)}" target="_blank" rel="noopener">+</a>`)));
+}
+
+// ═══════════════════════════════════════════
+// LOADERS
+// ═══════════════════════════════════════════
+async function loadJudge() {
+  const col = document.getElementById('judge');
+  let data;
+  try {
+    data = await fetchJSON(JUDGE_URL + '?t=' + Date.now());
+  } catch {
+    col.querySelector('.feed-loading').outerHTML =
+      `<div class="feed-note">The judge has not run yet. It needs <code>ANTHROPIC_API_KEY</code> in the repo's Actions secrets.</div>`;
+    updateHealth('judge', 'error');
+    return;
+  }
+  const picks = data.picks || [];
+  if (!picks.length) {
+    col.querySelector('.feed-loading').outerHTML =
+      `<div class="feed-note">No picks yet — the judge runs twice a day and writes here.</div>`;
+    updateHealth('judge', 'error');
+    return;
+  }
+  fillColumn('judge', picks.map(p => ({ ...p, pubDate: p.ts })), {
+    make: p => {
+      const li = document.createElement('li');
+      li.className = 'feed-item judge-item';
+      const ts = parseDate(p.ts);
+      if (ts) li.setAttribute('data-timestamp', ts);
+      const tags = (p.tags || []).map(t =>
+        `<span class="judge-tag t-${esc(t)}">${esc(t)}</span>`).join(' · ');
+      const hedge = p.confidence === 'medium' ? ` <span class="judge-hedge">· cause inferred</span>` : '';
+      li.innerHTML = `<a href="${esc(p.url)}" target="_blank" rel="noopener">
+        <span class="judge-headline">${highlightKeywords(esc(p.headline))}</span>
+        <span class="judge-why">${esc(p.why)}</span>
+        <span class="judge-meta">${tags}${tags ? ' · ' : ''}${esc(p.where)} · ${timeAgo(p.ts)}${hedge}</span>
+      </a>`;
+      return li;
+    }
+  });
+}
+
+async function loadRSSColumn(cfg, index) {
+  const colId = `feed-${index}`;
+  try {
+    const results = await Promise.allSettled(cfg.feeds.map(async f => {
+      const xml = await fetchWithProxy(f.url);
+      return parseRSS(xml).slice(0, cfg.feeds.length > 1 ? 6 : cfg.max)
+        .map(it => ({ ...it, sourceLabel: cfg.feeds.length > 1 ? f.label : '' }));
+    }));
+    const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))
+      .sort(byNewest).slice(0, cfg.max);
+    fillColumn(colId, items);
+  } catch {
+    fillColumn(colId, [], { emptyMsg: 'Feed unavailable' });
+  }
+}
+
+async function loadRedditColumn(cfg, index) {
+  const colId = `reddit-${index}`;
+  const results = await Promise.allSettled(cfg.subs.map(async sub => {
+    const posts = await fetchRedditJSON(sub, cfg.subs.length > 1 ? 8 : cfg.max);
+    return posts.filter(p => !p.stickied).map(p => ({
+      title: p.title,
+      link: p.url && !String(p.url).includes('reddit.com') ? p.url : `https://www.reddit.com${p.permalink}`,
+      pubDate: new Date(p.created_utc * 1000).toISOString(),
+      sourceLabel: `r/${sub}`
+    }));
+  }));
+  const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))
+    .sort(byNewest).slice(0, cfg.max);
+  fillColumn(colId, items, { emptyMsg: 'Reddit archive unavailable' });
+}
+
+// Same routine-notice filter the collector uses. NAGPRA inventories and the
+// weekly National Register nomination list are legally required, constant, and
+// not what this board is for.
+const FEDREG_ROUTINE = /Notice of Inventory Completion|Notice of Inten(ded|t to) Repatriat|Notice of Intended Disposition|National Register of Historic Places;\s*(Notification of Pending Nominations|Weekly List)/i;
+
+async function loadFedRegister() {
+  try {
+    const since = new Date(Date.now() - 21 * 86400000).toISOString().slice(0, 10);
+    const results = await Promise.allSettled([
+      ['national-park-service', 'NPS'], ['forest-service', 'USFS']
+    ].map(async ([agency, label]) => {
+      const url = 'https://www.federalregister.gov/api/v1/documents.json'
+        + `?per_page=60&order=newest&conditions[agencies][]=${agency}`
+        + `&conditions[publication_date][gte]=${since}`
+        + '&fields[]=title&fields[]=html_url&fields[]=publication_date&fields[]=type';
+      const j = await fetchJSON(url);
+      return (j.results || [])
+        .filter(d => !FEDREG_ROUTINE.test(d.title || ''))
+        .map(d => ({
+          title: d.title, link: d.html_url, pubDate: d.publication_date,
+          badge: label, sourceLabel: d.type
+        }));
+    }));
+    const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))
+      .sort(byNewest).slice(0, 14);
+    fillColumn('fedreg', items, { emptyMsg: 'No filings in the last 21 days' });
+  } catch {
+    fillColumn('fedreg', [], { emptyMsg: 'Federal Register unavailable' });
+  }
+}
+
+async function loadCourts() {
+  try {
+    // Scoped to cases where a land agency is actually a party. A plain
+    // full-text search returns every opinion that merely says "national park".
+    const q = 'caseName:("Forest Service" OR "National Park Service" OR "National Forest" '
+            + 'OR "National Park" OR "Department of the Interior" OR "Bureau of Land Management")';
+    const url = 'https://www.courtlistener.com/api/rest/v4/search/'
+      + `?q=${encodeURIComponent(q)}&type=o&order_by=${encodeURIComponent('dateFiled desc')}`;
+    const j = await fetchJSONResilient(url);
+    const items = (j.results || []).slice(0, 12).map(r => ({
+      title: r.caseName,
+      link: 'https://www.courtlistener.com' + r.absolute_url,
+      pubDate: r.dateFiled,
+      sourceLabel: (r.court || '').replace(/^Court of Appeals for the /, 'CA ').replace(/^District Court, /, '')
+    }));
+    fillColumn('courts', items, { emptyMsg: 'No recent filings' });
+  } catch {
+    fillColumn('courts', [], { emptyMsg: 'CourtListener unavailable' });
+  }
+}
+
+async function googleNews(query, when = '24h', limit = 5) {
+  const url = `https://news.google.com/rss/search?q=when:${when}+${encodeURIComponent(query)}&ceid=US:en&hl=en-US&gl=US`;
+  try {
+    const xml = await fetchWithProxy(url);
+    return parseRSS(xml).slice(0, limit).map(it => {
+      // Google News links are news.google.com redirects, so the domain is
+      // useless as a label. The real outlet is appended to the title as
+      // " - Outlet Name"; pull it out and use it, rather than printing
+      // "news.google" on every row.
+      const cut = it.title.lastIndexOf(' - ');
+      let title = it.title, label = shortDomain(it.link);
+      if (cut > 20 && it.title.length - cut < 40) {
+        label = it.title.slice(cut + 3).trim();
+        title = it.title.slice(0, cut).trim();
+      }
+      return { ...it, title, sourceLabel: label };
+    });
+  } catch { return []; }
+}
+
+async function loadWhatsHot() {
+  const maxAge = 48 * 3600 * 1000, now = Date.now();
+  const batch = [...HOT_QUERIES].sort(() => Math.random() - 0.5).slice(0, 8);
+  const results = await Promise.allSettled(batch.map(q => googleNews(q, '24h', 5)));
+  const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value)
+    .filter(it => !isExcludedDomain(it.link))
+    .filter(it => { const d = parseDate(it.pubDate); return !d || (now - d) <= maxAge; }))
+    .sort(byNewest).slice(0, 12);
+  fillColumn('whats-hot', items, { emptyMsg: 'Nothing hot right now' });
+}
+
+async function loadAgencies() {
+  const results = await Promise.allSettled(AGENCY_QUERIES.map(q => googleNews(q, '7d', 8)));
+  const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))
+    .sort(byNewest).slice(0, 12);
+  fillColumn('agencies', items, { emptyMsg: 'No agency posts found' });
+}
+
+// ═══════════════════════════════════════════
+// CONTROLS
+// ═══════════════════════════════════════════
+function toggleDark() {
+  document.body.classList.toggle('dark');
+  const on = document.body.classList.contains('dark');
+  document.getElementById('darkBtn').textContent = on ? 'Light' : 'Dark';
+  document.getElementById('darkBtn').classList.toggle('active', on);
+  localStorage.setItem('register-dark', on);
+}
+
+function toggleCompact() {
+  document.body.classList.toggle('compact');
+  const on = document.body.classList.contains('compact');
+  document.getElementById('compactBtn').classList.toggle('active', on);
+  localStorage.setItem('register-compact', on);
+}
+
+// ── Paywall bypass ──
+const PAYWALLED = ['hcn.org','outsideonline.com','nytimes.com','wsj.com','washingtonpost.com',
+  'theatlantic.com','bloomberg.com','ft.com','latimes.com','sfchronicle.com','denverpost.com',
+  'sltrib.com','adn.com','azcentral.com','statesman.com','newyorker.com','harpers.org'];
+let paywallBypass = localStorage.getItem('register-paywall') !== 'false';
+
+function hostOf(u) { try { return new URL(u, location.href).hostname.replace(/^www\./, ''); } catch { return ''; } }
+function isPaywalled(u) { const h = hostOf(u); return PAYWALLED.some(d => h === d || h.endsWith('.' + d)); }
+function wrapPaywall(u) { return 'https://www.removepaywall.com/search?url=' + encodeURIComponent(u); }
+
+function applyPaywallTo(a) {
+  const orig = a.dataset.origHref || a.getAttribute('href');
+  if (!orig) return;
+  if (!a.dataset.origHref) a.dataset.origHref = orig;
+  a.setAttribute('href', (paywallBypass && isPaywalled(orig)) ? wrapPaywall(orig) : orig);
+}
+
+function applyPaywallAll(root) { (root || document).querySelectorAll('.feed-item a[href], .drawer-row a[href]').forEach(applyPaywallTo); }
+
+const _paywallObserver = new MutationObserver(muts => {
+  for (const m of muts) for (const n of m.addedNodes) {
+    if (n.nodeType !== 1) continue;
+    if (n.matches && n.matches('.feed-item a[href]')) applyPaywallTo(n);
+    if (n.querySelectorAll) n.querySelectorAll('.feed-item a[href], .drawer-row a[href]').forEach(applyPaywallTo);
+  }
+});
+
+function togglePaywall() {
+  paywallBypass = !paywallBypass;
+  localStorage.setItem('register-paywall', String(paywallBypass));
+  document.getElementById('paywallBtn').classList.toggle('active', paywallBypass);
+  applyPaywallAll();
+}
+
+function refreshAll() {
+  renderGrid();
+  renderFieldNote();
+  loadCount();
+  loadJudge();
+  loadWhatsHot();
+  loadFedRegister();
+  loadAgencies();
+  loadCourts();
+  RSS_COLUMNS.forEach((c, i) => loadRSSColumn(c, i));
+  REDDIT_COLUMNS.forEach((c, i) => loadRedditColumn(c, i));
+  document.getElementById('lastUpdated').textContent =
+    'Updated ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+}
+</script>
+<script src="fieldnotes.js"></script>
+<script>
+function renderFieldNote() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((now - start) / 86400000);
+  const entry = FIELD_NOTES[dayOfYear % FIELD_NOTES.length];
+  document.getElementById('fieldNoteDay').textContent = 'Day ' + dayOfYear + ' of ' + now.getFullYear();
+  document.getElementById('fieldNoteTitle').textContent = entry.t;
+  document.getElementById('fieldNoteText').textContent = entry.d;
+  const link = document.getElementById('fieldNoteLink');
+  link.href = entry.u;
+  link.textContent = 'Read more →';
+}
+
+(function init() {
+  if (localStorage.getItem('register-dark') === 'true') {
+    document.body.classList.add('dark');
+    document.getElementById('darkBtn').classList.add('active');
+    document.getElementById('darkBtn').textContent = 'Light';
+  }
+  if (localStorage.getItem('register-compact') === 'true') {
+    document.body.classList.add('compact');
+    document.getElementById('compactBtn').classList.add('active');
+  }
+  document.getElementById('paywallBtn').classList.toggle('active', paywallBypass);
+  _paywallObserver.observe(document.body, { childList: true, subtree: true });
+  refreshAll();
+  setInterval(refreshAll, 600000);
+})();
+</script>
+
+</body>
+</html>

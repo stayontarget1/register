@@ -1,14 +1,14 @@
 {
- "generated": "2026-08-19T13:12:27+00:00",
+ "generated": "2026-08-19T14:55:09+00:00",
  "count": {
-  "parks_under_alert": 182,
+  "parks_under_alert": 184,
   "full_closures": 3,
   "fires": 28,
   "fedreg_7d": 2,
   "red_flag": 0
  },
  "totals": {
-  "alerts_scanned": 632,
+  "alerts_scanned": 636,
   "candidates": 70
  },
  "closures": [
@@ -37,14 +37,124 @@
  "fires": [
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "title": "ORFWF Wrights Spring",
-   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "unit": "Fremont-Winema National Forest",
+   "id": "http://inciweb.wildfire.gov/incident-information/cogmf-gold-mountain-fire",
+   "title": "COGMF Gold Mountain Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/cogmf-gold-mountain-fire",
+   "unit": "Grand Mesa Uncompahgre and Gunnison National Forests",
+   "state": "Colorado",
+   "acres": 2000,
+   "federal": true,
+   "description": "The Gold Mountain Fire was discovered on June 27, 2026, at approximately 5:33 pm 2 miles northeast of Ouray, CO. Fire initially started burning in mixed conifer vegetation located on inaccessible terrain above the east side of Highway 550. Local, State, and Federal initial attack fire resources were ordered immediately. The fire spread quickly running up steep slopes. A local Type 3 Incident Management Team was assigned on June 27, 2026. Aviation resources were ordered throughout the next day, but high winds and terrain features shut down the use of aviation resources. Fire became very active,"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
+   "title": "IDNCF Moose Mountain",
+   "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
+   "unit": "Nez Perce - Clearwater National Forests",
+   "state": "Idaho",
+   "acres": 0,
+   "federal": true,
+   "description": "Moose Mountain is a wildfire started by lightning and burning approximately 4 miles north of Kelly Forks Campground and Guard Station. The Moose Mountain Fire has burned down to the North Fork of the Clearwater River prompting a closure of that section of Forest Road #250 in Black Canyon."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "title": "MTBDF Moose Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels, with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-black-bear-fire",
+   "title": "MTBRF Black Bear Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-black-bear-fire",
+   "unit": "Bitterroot National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Black Bear Fire started on 08.01.2026 due to lightning. The fire is located 15 miles east of Hamilton, MT. The fire is burning on northern aspects where there is heavy timber and southern aspects dominated by grasses and light timber. Fire behavior is exhibiting flanking, backing, and isolate torching. The fire is surrounded on three sides by burn scars from fires that occurred between 2022 and 2024 which provide natural containment features to slow the fire."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-butterfly-fire",
+   "title": "MTBRF Butterfly Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-butterfly-fire",
+   "unit": "Bitterroot National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Butterfly Fire was a lightning caused fire located approximately 10 miles east of Hamilton, MT. The fire burned primarily along the St. Clair drainage, though its footprint has not expanded recently, despite multiple days of red flag conditions. The fire is currently at 100% containment."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
+   "title": "WANCP Border 2 Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
+   "unit": "North Cascades National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "Following lightning storms on July 17, Border 1 Fire and Border 2 Fire were discovered within North Cascades National Park Service Complex along the U.S./Canada border, east of Ross Lake, in steep, rocky, and remote terrain. Fire activity increased due to elevated fire weather conditions Border 1 and Border 2 Fires combined on July 21, now known as the Border 2 Fire. The fire has crossed the international border into Canada (known as Hozomeen Mountain Wildfire) and east onto Okanogan-Wenatchee National Forest lands. The lightning-caused Border 2 Fire is being managed under a full-suppression s"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-north-fork-fire",
+   "title": "MTBRF North Fork Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-north-fork-fire",
+   "unit": "Bitterroot National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "As of July 31, the fire grew approximately 10 acres to the south and east of the perimeter burning through light vegetation down the slope. Firefighters continue actively making progress on fuel breaks that are located north of Lost Horse Road and east of the North Fork Fire. Two more hand crew modules are on order. This particular fire area is considered high-risk to insert firefighters at this fire\u2019s edge due to safety concerns such as steep and rocky terrain, with no evacuation routes by foot or vehicle.Please check out closure areas under the Closures tab."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "title": "ORUMF Paradise Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "unit": "Umatilla National Forest",
    "state": "Oregon",
    "acres": 0,
    "federal": true,
-   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, OR"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "title": "ORUMF Hagen Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon.Stay prepared and informed by accessing our interactive evacuation maps."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
+   "title": "WAOWF Little Giant Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
+   "unit": "Okanogan-Wenatchee National Forest",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Little Giant Fire, started by lightning on July 15, is located 30 miles NW of Leavenworth, WA. It is in the Chiwawa River drainage on the Wenatchee River Ranger District of the Okanogan-Wenatchee National Forest. It was originally estimated at 5 acres. Rappellers were dispatched for initial attack, and a 21-person initial attack crew arrived on July 17. Minimal aerial support was available to support firefighters on the ground.Due to winds and increased fire behavior, as well as poor access in steep, inaccessible country, all firefighters disengaged and hiked out on July 18. Warm weather, "
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-sand-creek",
+   "title": "MTBDF Sand Creek",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-sand-creek",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "Located approximately 7.5 miles southeast of Wisdom, the fire was initially reported at 1:45 pm on August 1, 2026 and was estimated at 40 acres. Fire behavior was crowning and torching in live green and dead and down subalpine fir."
   },
   {
    "kind": "fire",
@@ -56,17 +166,6 @@
    "acres": 0,
    "federal": true,
    "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "title": "ORUMF Bologna Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
   },
   {
    "kind": "fire",
@@ -92,6 +191,28 @@
   },
   {
    "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "title": "ORFWF Wrights Spring",
+   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "unit": "Fremont-Winema National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "title": "ORUMF Bologna Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
+  },
+  {
+   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
    "title": "WAMRP Grand Park 2 Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
@@ -111,17 +232,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Widemouth 2 Fire is a natural lightning fire that started on 7/27/2026 six miles south of Kanosh, Utah. The fire is located on the Fillmore District of the Fishlake National Forest."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "title": "MTBDF Moose Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels, with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
   },
   {
    "kind": "fire",
@@ -180,17 +290,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "title": "ORUMF Paradise Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, OR"
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
    "title": "UTMLF Black Canyon",
    "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
@@ -213,28 +312,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
-   "title": "IDNCF Moose Mountain",
-   "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
-   "unit": "Nez Perce - Clearwater National Forests",
-   "state": "Idaho",
-   "acres": 0,
-   "federal": true,
-   "description": "Moose Mountain is a wildfire started by lightning and burning approximately 4 miles north of Kelly Forks Campground and Guard Station. The Moose Mountain Fire has burned down to the North Fork of the Clearwater River prompting a closure of that section of Forest Road #250 in Black Canyon."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
-   "title": "WAOWF Little Giant Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
-   "unit": "Okanogan-Wenatchee National Forest",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Little Giant Fire, started by lightning on July 15, is located 30 miles NW of Leavenworth, WA. It is in the Chiwawa River drainage on the Wenatchee River Ranger District of the Okanogan-Wenatchee National Forest. It was originally estimated at 5 acres. Rappellers were dispatched for initial attack, and a 21-person initial attack crew arrived on July 17. Minimal aerial support was available to support firefighters on the ground.Due to winds and increased fire behavior, as well as poor access in steep, inaccessible country, all firefighters disengaged and hiked out on July 18. Warm weather, "
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
    "title": "COGMF Elk Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
@@ -243,17 +320,6 @@
    "acres": 0,
    "federal": true,
    "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "title": "ORUMF Hagen Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon.Stay prepared and informed by accessing our interactive evacuation maps."
   },
   {
    "kind": "fire",
@@ -276,72 +342,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Aspen Acres Fire was first reported on June 29th at approximately 6:00am. The fire originated 10 miles northwest of Rye, Colorado in the area of the San Isabel National Forest.The Aspen Acres Fire experienced explosive growth due to record\u2011low fuel moisture levels and persistent red flag conditions during the week preceding and the days following ignition. The fire was driven by sustained winds over 40 mph, with gusts estimated up to 100 mph. It initially impacted the community of Beulah, Colorado, and later affected additional communities and areas across Custer, Pueblo, Fremont, and Huer"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
-   "title": "IDIPF Upper Smith Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
-   "unit": "Idaho Panhandle National Forests",
-   "state": "Idaho",
-   "acres": 0,
-   "federal": true,
-   "description": "The Upper Smith Fire is located within the Smith Creek drainage, approximately 6 miles west of Porthill, Idaho and about 20 miles northwest of Bonners Ferry, Idaho. The fire was ignited by lightning on July 7th. It is burning on a steep, north-facing slope in heavy timber with significant concentrations of dead and down fuels.The Northern Idaho Blue Team assumed command of the fire on August 12, 2026, at 6:00 am. A full suppression strategy will continue to be implemented utilizing direct and indirect tactics to protect critical values at-risk and minimize firefighter risk exposure."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
-   "title": "WANCP Border 2 Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
-   "unit": "North Cascades National Park",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "Following lightning storms on July 17, Border 1 Fire and Border 2 Fire were discovered within North Cascades National Park Service Complex along the U.S./Canada border, east of Ross Lake, in steep, rocky, and remote terrain. Fire activity increased due to elevated fire weather conditions Border 1 and Border 2 Fires combined on July 21, now known as the Border 2 Fire. The fire has crossed the international border into Canada (known as Hozomeen Mountain Wildfire) and east onto Okanogan-Wenatchee National Forest lands. The lightning-caused Border 2 Fire is being managed under a full-suppression s"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-butterfly-fire",
-   "title": "MTBRF Butterfly Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-butterfly-fire",
-   "unit": "Bitterroot National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Butterfly Fire was a lightning caused fire located approximately 10 miles east of Hamilton, MT. The fire burned primarily along the St. Clair drainage, though its footprint has not expanded recently, despite multiple days of red flag conditions. The fire is currently at 100% containment."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-north-fork-fire",
-   "title": "MTBRF North Fork Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-north-fork-fire",
-   "unit": "Bitterroot National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "As of July 31, the fire grew approximately 10 acres to the south and east of the perimeter burning through light vegetation down the slope. Firefighters continue actively making progress on fuel breaks that are located north of Lost Horse Road and east of the North Fork Fire. Two more hand crew modules are on order. This particular fire area is considered high-risk to insert firefighters at this fire\u2019s edge due to safety concerns such as steep and rocky terrain, with no evacuation routes by foot or vehicle.Please check out closure areas under the Closures tab."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbrf-black-bear-fire",
-   "title": "MTBRF Black Bear Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbrf-black-bear-fire",
-   "unit": "Bitterroot National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Black Bear Fire started on 08.01.2026 due to lightning. The fire is located 15 miles east of Hamilton, MT. The fire is burning on northern aspects where there is heavy timber and southern aspects dominated by grasses and light timber. Fire behavior is exhibiting flanking, backing, and isolate torching. The fire is surrounded on three sides by burn scars from fires that occurred between 2022 and 2024 which provide natural containment features to slow the fire."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-sand-creek",
-   "title": "MTBDF Sand Creek",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-sand-creek",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "Located approximately 7.5 miles southeast of Wisdom, the fire was initially reported at 1:45 pm on August 1, 2026 and was estimated at 40 acres. Fire behavior was crowning and torching in live green and dead and down subalpine fir."
   }
  ],
  "fedreg": [

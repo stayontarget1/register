@@ -130,6 +130,51 @@
   .drawer-meta { font-size: 10px; color: #aaa; margin-left: 5px; }
   .drawer-empty { font-size: 11px; color: #bbb; font-style: italic; }
 
+  /* ── The Lead ── */
+  .lead {
+    display: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 16px 14px;
+    background: #fff;
+  }
+  .lead.show { display: block; }
+  .lead-top { display: flex; align-items: baseline; gap: 8px; margin-bottom: 5px; }
+  .lead-label {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.2px; color: #1b5e3f;
+  }
+  .lead-stamp { font-size: 9.5px; color: #bbb; margin-left: auto; }
+  .lead-headline {
+    font-size: 19px; font-weight: 700; line-height: 1.25;
+    letter-spacing: -0.3px; margin-bottom: 5px; color: #111;
+  }
+  .lead-summary { font-size: 13px; line-height: 1.5; color: #333; margin-bottom: 9px; max-width: 78ch; }
+  .lead-rows { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; align-items: baseline; }
+  .lead-key {
+    font-size: 9.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.7px; color: #aaa; white-space: nowrap; padding-top: 1px;
+  }
+  .lead-val { font-size: 12.5px; line-height: 1.45; color: #333; }
+  .lead-val.action { color: #c00; font-weight: 600; }
+  .lead-sources { margin-top: 9px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .lead-src {
+    font-size: 10.5px; color: #1a6dcc; text-decoration: none;
+    border: 1px solid #dde; border-radius: 3px; padding: 2px 7px;
+  }
+  .lead-src:hover { background: #f0f4fb; text-decoration: underline; }
+  .lead-hedge { font-size: 9.5px; color: #bbb; font-style: italic; }
+
+  body.dark .lead { background: #111; border-bottom-color: #2a2a2a; }
+  body.dark .lead-label { color: #4caf7d; }
+  body.dark .lead-headline { color: #eee; }
+  body.dark .lead-summary, body.dark .lead-val { color: #bbb; }
+  body.dark .lead-key { color: #666; }
+  body.dark .lead-val.action { color: #f55; }
+  body.dark .lead-src { color: #5aadff; border-color: #2f3a4a; }
+  body.dark .lead-src:hover { background: #18202b; }
+  body.compact .lead { padding: 9px 16px 10px; }
+  body.compact .lead-rows, body.compact .lead-summary { display: none; }
+
   /* ── Feed Grid ── */
   .feed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0; padding: 0; }
 
@@ -321,6 +366,8 @@
 <div class="count-strip" id="countStrip"></div>
 <div class="count-drawer" id="countDrawer"></div>
 
+<div class="lead" id="lead"></div>
+
 <div class="feed-grid" id="feedGrid"></div>
 
 <div class="field-note" id="fieldNote">
@@ -377,12 +424,47 @@ const RSS_COLUMNS = [
     ] }
 ];
 
+// r/PublicLands is the highest-signal source on the page — it is almost entirely
+// hard public-lands news — so it gets its own column and no filtering.
+// The park subs are mostly photography and trip planning, with occasional real
+// reporting, so they are merged and filtered. r/WildernessBackpacking was dropped
+// outright: it is gear and trip talk (eBay tents, Kyrgyzstan) and was diluting
+// PublicLands while it was merged with it.
 const REDDIT_COLUMNS = [
-  { title: "r/nationalparks", site: "https://www.reddit.com/r/nationalparks", max: 10,
-    subs: ["nationalparks", "NationalPark"] },
-  { title: "r/PublicLands", site: "https://www.reddit.com/r/PublicLands", max: 10,
-    subs: ["PublicLands", "WildernessBackpacking"] }
+  { title: "r/PublicLands", site: "https://www.reddit.com/r/PublicLands", max: 12,
+    subs: ["PublicLands"], filter: false },
+  { title: "Park Subs", site: "https://www.reddit.com/r/nationalparks", max: 12,
+    subs: ["nationalparks", "NationalPark"], filter: true }
 ];
+
+// The park subs are ~80% photography, trip planning and outright spam, and an
+// outbound link is NOT enough of a signal on its own ("12 Professional Sites
+// That Will Help Any Group" is a link post too). So every post must earn its
+// place on the title, and image posts are dropped outright.
+const REDDIT_NEWSY = new RegExp([
+  'clos(e|ed|ing|ure)', 'shut', 'logg(ing|ed)', 'timber', 'drill', 'mining', 'mine',
+  'lease', 'sell|sold|sale|auction|dispos', 'privat', 'staff', 'layoff|laid off',
+  'fired|firing|hiring|vacan|shortage', 'budget|funding|appropriat|shutdown|furlough',
+  'cut(s|ting)?\\b', 'roadless', 'wilderness', 'monument', 'boundary', 'acres',
+  'rule|rulemaking|regulation|repeal|rescind|rollback|reversal', 'polic(y|ies)',
+  'lawsuit|court|judge|sue[ds]?|injunction|settle', 'ban(ned|ning)?\\b',
+  'permit', 'fee(s)?\\b', 'reservation system', 'border|wall',
+  'protest|petition|comment period|public comment|testimony|hearing',
+  'records|watchdog|whistleblow|investigation|audit|inspector general',
+  'Interior|Forest Service|Park Service|BLM|Congress|Senate|House|administration',
+  'ranger(s)?\\b', 'removed|removing|disappear|erase|censor|scrub',
+  'threat|endanger|delist|protection', 'access', 'crowd|overcrowd|visitation',
+  'fire|wildfire|burn|evacuat', 'water|sewage|infrastructure'
+].join('|'), 'i');
+
+function redditIsNewsy(p) {
+  const domain = String(p.domain || '');
+  const title = String(p.title || '');
+  if (p.post_hint === 'image' || p.post_hint === 'hosted:video' || p.post_hint === 'rich:video') return false;
+  if (/^(i|v)\.redd\.it$|imgur|flickr|instagram|youtu/.test(domain)) return false;
+  if (title.length < 25) return false;            // "Shenandoah", "This is heartbreaking"
+  return REDDIT_NEWSY.test(title);
+}
 
 const EXCLUDED_DOMAINS = [
   'nationalparkstraveler.org','hcn.org','landdesk.org','wildfiretoday.com',
@@ -861,6 +943,7 @@ async function loadJudge() {
     updateHealth('judge', 'error');
     return;
   }
+  renderLead(data.lead);
   const picks = data.picks || [];
   if (!picks.length) {
     col.querySelector('.feed-loading').outerHTML =
@@ -887,6 +970,35 @@ async function loadJudge() {
   });
 }
 
+// One developed story per run: enough for him to decide in thirty seconds
+// whether it is today's video, without opening anything.
+function renderLead(lead) {
+  const el = document.getElementById('lead');
+  if (!lead || !lead.headline) { el.classList.remove('show'); return; }
+  const row = (k, v, cls) => v
+    ? `<span class="lead-key">${k}</span><span class="lead-val ${cls || ''}">${highlightKeywords(esc(v))}</span>`
+    : '';
+  const srcs = (lead.sources || []).map((u, i) =>
+    `<a class="lead-src" href="${esc(u)}" target="_blank" rel="noopener">${esc(shortDomain(u) || 'source ' + (i + 1))}</a>`).join('');
+  el.innerHTML = `
+    <div class="lead-top">
+      <span class="lead-label">◆ The Lead</span>
+      ${lead.confidence === 'medium' ? '<span class="lead-hedge">reading is partly inferred</span>' : ''}
+      <span class="lead-stamp">${timeAgo(lead.ts)} ago</span>
+    </div>
+    <div class="lead-headline">${highlightKeywords(esc(lead.headline))}</div>
+    <div class="lead-summary">${highlightKeywords(esc(lead.summary))}</div>
+    <div class="lead-rows">
+      ${row('The arc', lead.arc)}
+      ${row('On screen', lead.on_screen)}
+      ${row('Pushback', lead.pushback)}
+      ${row('Stakes', lead.stakes)}
+      ${row('Action', lead.action, 'action')}
+    </div>
+    ${srcs ? `<div class="lead-sources">${srcs}</div>` : ''}`;
+  el.classList.add('show');
+}
+
 async function loadRSSColumn(cfg, index) {
   const colId = `feed-${index}`;
   try {
@@ -906,13 +1018,16 @@ async function loadRSSColumn(cfg, index) {
 async function loadRedditColumn(cfg, index) {
   const colId = `reddit-${index}`;
   const results = await Promise.allSettled(cfg.subs.map(async sub => {
-    const posts = await fetchRedditJSON(sub, cfg.subs.length > 1 ? 8 : cfg.max);
-    return posts.filter(p => !p.stickied).map(p => ({
+    const posts = await fetchRedditJSON(sub, cfg.filter ? 25 : cfg.max);
+    return posts
+      .filter(p => !p.stickied)
+      .filter(p => !cfg.filter || redditIsNewsy(p))
+      .map(p => ({
       title: p.title,
       link: p.url && !String(p.url).includes('reddit.com') ? p.url : `https://www.reddit.com${p.permalink}`,
       pubDate: new Date(p.created_utc * 1000).toISOString(),
       sourceLabel: `r/${sub}`
-    }));
+      }));
   }));
   const items = dedupe(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))
     .sort(byNewest).slice(0, cfg.max);

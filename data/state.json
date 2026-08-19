@@ -1,11 +1,11 @@
 {
- "generated": "2026-08-19T04:54:55+00:00",
+ "generated": "2026-08-19T07:08:39+00:00",
  "count": {
   "parks_under_alert": 182,
   "full_closures": 3,
   "fires": 29,
   "fedreg_7d": 2,
-  "red_flag": 2
+  "red_flag": 0
  },
  "totals": {
   "alerts_scanned": 632,
@@ -35,6 +35,17 @@
   }
  ],
  "fires": [
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "title": "ORUMF Bologna Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
+  },
   {
    "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
@@ -276,17 +287,6 @@
    "acres": 0,
    "federal": true,
    "description": "Following lightning storms on July 17, Border 1 Fire and Border 2 Fire were discovered within North Cascades National Park Service Complex along the U.S./Canada border, east of Ross Lake, in steep, rocky, and remote terrain. Fire activity increased due to elevated fire weather conditions Border 1 and Border 2 Fires combined on July 21, now known as the Border 2 Fire. The fire has crossed the international border into Canada (known as Hozomeen Mountain Wildfire) and east onto Okanogan-Wenatchee National Forest lands. The lightning-caused Border 2 Fire is being managed under a full-suppression s"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "title": "ORUMF Bologna Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
   },
   {
    "kind": "fire",

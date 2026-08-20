@@ -1,14 +1,14 @@
 {
- "generated": "2026-08-20T16:53:22+00:00",
+ "generated": "2026-08-20T19:03:24+00:00",
  "count": {
-  "parks_under_alert": 183,
+  "parks_under_alert": 182,
   "full_closures": 3,
-  "fires": 26,
-  "fedreg_7d": 2,
+  "fires": 25,
+  "fedreg_7d": 0,
   "red_flag": 4
  },
  "totals": {
-  "alerts_scanned": 633,
+  "alerts_scanned": 631,
   "candidates": 70
  },
  "closures": [
@@ -59,6 +59,61 @@
   },
   {
    "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
+   "title": "IDIPF Upper Smith Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
+   "unit": "Idaho Panhandle National Forests",
+   "state": "Idaho",
+   "acres": 0,
+   "federal": true,
+   "description": "The Upper Smith Fire is located within the Smith Creek drainage, approximately 6 miles west of Porthill, Idaho and about 20 miles northwest of Bonners Ferry, Idaho. The fire was ignited by lightning on July 7th. It is burning on a steep, north-facing slope in heavy timber with significant concentrations of dead and down fuels.The Northern Idaho Blue Team assumed command of the fire on August 12, 2026, at 6:00 am. A full suppression strategy will continue to be implemented utilizing direct and indirect tactics to protect critical values at-risk and minimize firefighter risk exposure."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "title": "ORUMF Hagen Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "Current Evacuation Map Genasys I Current Evacuation Map Raptor I OR DOT TripCheck I Facebook Updates Sign-up for Emergency AlertsThe Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area.A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly sl"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "title": "ORUMF Paradise Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area. A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly slow wildfire suppression efforts. Remember: If you fly\u2026 we can\u2019t!"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
+   "title": "WAMRP Grand Park 2 Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
+   "unit": "Mount Rainier National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Grand Park 2 Fire was reported Aug. 7 and is located approximately three miles north of the Sunrise Visitor Center in Mount Rainier National Park. Local resources managed initial and extended attack until Complex Incident Management Team Northwest 13 assumed command Aug. 11 in coordination with local, state, and federal agencies."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/idncf-little-weitas",
+   "title": "IDNCF Little Weitas",
+   "url": "http://inciweb.wildfire.gov/incident-information/idncf-little-weitas",
+   "unit": "Nez Perce - Clearwater National Forests",
+   "state": "Idaho",
+   "acres": 0,
+   "federal": true,
+   "description": "The Little Weitas Fire is currently located 3 miles Northeast of Weitas Butte and burning in steep rugged terrain with very limited access for fire personnel."
+  },
+  {
+   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
    "title": "MTLNF Cherry Peak",
    "url": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
@@ -103,17 +158,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
-   "title": "WAMRP Grand Park 2 Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
-   "unit": "Mount Rainier National Park",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Grand Park 2 Fire was reported Aug. 7 and is located approximately three miles north of the Sunrise Visitor Center in Mount Rainier National Park. Local resources managed initial and extended attack until Complex Incident Management Team Northwest 13 assumed command Aug. 11 in coordination with local, state, and federal agencies."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
    "title": "MTFNF Skillet Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
@@ -133,17 +177,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Backbone fire is in Gifford Pinchot National Forest, located 7 miles north-east of the town of Packwood, Washington. The Backbone was a lightning caused fire that started on August 5, 2026."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "title": "ORUMF Paradise Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area. A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly slow wildfire suppression efforts. Remember: If you fly\u2026 we can\u2019t!"
   },
   {
    "kind": "fire",
@@ -188,17 +221,6 @@
    "acres": 0,
    "federal": true,
    "description": "Notice: As of August 10, incident updates will only be published on Mondays, Wednesdays, and Fridays. On the evening of July 6, 2026, a storm system moved through the area with thunder and lightning and little precipitation. The following day, several small wildfires were reported. The Southern Area Complex Incident Management Team 1 is responsible for management of this firefighting effort.For information on Superior National Forest BWCAW openings and closures or fire restrictions, please see the Forest's Alerts webpage: https://www.fs.usda.gov/r09/superior/alertsThe Little Knife Fire is unde"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "title": "ORUMF Hagen Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "Current Evacuation Map Genasys I Current Evacuation Map Raptor I OR DOT TripCheck I Facebook Updates Sign-up for Emergency AlertsThe Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area.A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly sl"
   },
   {
    "kind": "fire",
@@ -257,17 +279,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
-   "title": "IDIPF Upper Smith Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/idipf-upper-smith-fire",
-   "unit": "Idaho Panhandle National Forests",
-   "state": "Idaho",
-   "acres": 0,
-   "federal": true,
-   "description": "The Upper Smith Fire is located within the Smith Creek drainage, approximately 6 miles west of Porthill, Idaho and about 20 miles northwest of Bonners Ferry, Idaho. The fire was ignited by lightning on July 7th. It is burning on a steep, north-facing slope in heavy timber with significant concentrations of dead and down fuels.The Northern Idaho Blue Team assumed command of the fire on August 12, 2026, at 6:00 am. A full suppression strategy will continue to be implemented utilizing direct and indirect tactics to protect critical values at-risk and minimize firefighter risk exposure."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
    "title": "WAGPF High Lava Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
@@ -298,50 +309,7 @@
    "acres": 0,
    "federal": true,
    "description": "The Aspen Acres Fire was first reported on June 29th at approximately 6:00am. The fire originated 10 miles northwest of Rye, Colorado in the area of the San Isabel National Forest.The Aspen Acres Fire experienced explosive growth due to record\u2011low fuel moisture levels and persistent red flag conditions during the week preceding and the days following ignition. The fire was driven by sustained winds over 40 mph, with gusts estimated up to 100 mph. It initially impacted the community of Beulah, Colorado, and later affected additional communities and areas across Custer, Pueblo, Fremont, and Huer"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/catnf-2026-talbot-fire",
-   "title": "CATNF 2026 Talbot Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/catnf-2026-talbot-fire",
-   "unit": "Tahoe National Forest",
-   "state": "California",
-   "acres": 0,
-   "federal": true,
-   "description": "The Talbot Fire is burning on the Tahoe National Forest and located off French Meadows Road approximately 4 miles northeast of French Meadows Reservoir and 14 miles southeast of Truckee, California. The incident was reported Thursday, Aug. 12, 2026 and is burning near the Granite Chief Wilderness in heavy timber across extremely steep, rugged terrain."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/cosjf-rio-blanco-fire",
-   "title": "COSJF Rio Blanco Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/cosjf-rio-blanco-fire",
-   "unit": "San Juan National Forest",
-   "state": "Colorado",
-   "acres": 0,
-   "federal": true,
-   "description": "The Rio Blanco Fire is burning south of 8-mile Mesa, approximately 9 miles south of Pagosa Springs on Valle Seco B Road (NFSR 653). The cause is undetermined at this time. The Valle Seco Road (NFSR 653) and all spur roads are closed to the public. An official road closure will be in place soon. The public should avoid the area north of the Valle Seco Road. Closures: The San Juan National Forest has multiple road closures in place, including the Valle Seco Road (NFSR 653) and all associated spur roads. Evacuations: No evacuations remain in place. Firefighters, utility crews and heavy equipment "
   }
  ],
- "fedreg": [
-  {
-   "kind": "fedreg",
-   "id": "https://www.federalregister.gov/documents/2026/08/20/2026-16965/special-areas-roadless-area-conservation",
-   "agency": "USFS",
-   "title": "Special Areas; Roadless Area Conservation",
-   "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16965/special-areas-roadless-area-conservation",
-   "date": "2026-08-20",
-   "type": "Proposed Rule",
-   "description": "The U.S. Department of Agriculture (USDA or Department) is proposing to rescind the 2001 Roadless Area Conservation Rule (2001 Roadless Rule), which established broad prohibitions on road construction, road reconstruction, and timber harvesting within inventoried roadless areas on National Forest System lands. The intent of this proposed action is to reduce regulatory burden and return decisionmaking for the management of inventoried roadless areas to the land management planning process at the "
-  },
-  {
-   "kind": "fedreg",
-   "id": "https://www.federalregister.gov/documents/2026/08/14/2026-16656/secure-rural-schools-resource-advisory-committees",
-   "agency": "USFS",
-   "title": "Secure Rural Schools Resource Advisory Committees",
-   "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16656/secure-rural-schools-resource-advisory-committees",
-   "date": "2026-08-14",
-   "type": "Notice",
-   "description": "The United States Department of Agriculture (USDA), Forest Service is seeking nominations for the Secure Rural Schools Resource Advisory Committees (RAC) pursuant to the Secure Rural Schools (SRS) and Community Self-Determination Act of 2000 and the Federal Advisory Committee Act (FACA)."
-  }
- ]
+ "fedreg": []
 }

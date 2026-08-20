@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-20T04:56:10+00:00",
+ "generated": "2026-08-20T07:09:09+00:00",
  "count": {
   "parks_under_alert": 184,
   "full_closures": 3,
   "fires": 28,
-  "fedreg_7d": 1,
+  "fedreg_7d": 2,
   "red_flag": 0
  },
  "totals": {
@@ -345,6 +345,16 @@
   }
  ],
  "fedreg": [
+  {
+   "kind": "fedreg",
+   "id": "https://www.federalregister.gov/documents/2026/08/20/2026-16965/special-areas-roadless-area-conservation",
+   "agency": "USFS",
+   "title": "Special Areas; Roadless Area Conservation",
+   "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16965/special-areas-roadless-area-conservation",
+   "date": "2026-08-20",
+   "type": "Proposed Rule",
+   "description": "The U.S. Department of Agriculture (USDA or Department) is proposing to rescind the 2001 Roadless Area Conservation Rule (2001 Roadless Rule), which established broad prohibitions on road construction, road reconstruction, and timber harvesting within inventoried roadless areas on National Forest System lands. The intent of this proposed action is to reduce regulatory burden and return decisionmaking for the management of inventoried roadless areas to the land management planning process at the "
+  },
   {
    "kind": "fedreg",
    "id": "https://www.federalregister.gov/documents/2026/08/14/2026-16656/secure-rural-schools-resource-advisory-committees",

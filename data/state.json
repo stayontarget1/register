@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-21T07:10:42+00:00",
+ "generated": "2026-08-21T10:50:43+00:00",
  "count": {
   "parks_under_alert": 182,
   "full_closures": 2,
   "fires": 26,
-  "fedreg_7d": 2,
+  "fedreg_7d": 3,
   "red_flag": 3
  },
  "totals": {
@@ -316,6 +316,16 @@
   }
  ],
  "fedreg": [
+  {
+   "kind": "fedreg",
+   "id": "https://www.federalregister.gov/documents/2026/08/21/2026-17052/proposed-plan-of-operations-joshua-tree-national-park-ca",
+   "agency": "NPS",
+   "title": "Proposed Plan of Operations; Joshua Tree National Park, CA",
+   "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17052/proposed-plan-of-operations-joshua-tree-national-park-ca",
+   "date": "2026-08-21",
+   "type": "Notice",
+   "description": "The National Park Service is giving notice to the public that First Class Miners Inc. has filed a proposed plan to use personal vehicles on two roads within Joshua Tree National Park to reach mining claims located outside the park."
+  },
   {
    "kind": "fedreg",
    "id": "https://www.federalregister.gov/documents/2026/08/20/2026-16965/special-areas-roadless-area-conservation",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21T10:50:43+00:00",
+ "generated": "2026-08-21T13:13:36+00:00",
  "count": {
   "parks_under_alert": 182,
   "full_closures": 2,
@@ -41,6 +41,28 @@
   },
   {
    "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "title": "ORFWF Wrights Spring",
+   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "unit": "Fremont-Winema National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
+   "title": "MTBDF Bobcat Lakes",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
+  },
+  {
+   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
    "title": "WAOWF Little Giant Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
@@ -60,17 +82,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Upper Smith Fire is located within the Smith Creek drainage, approximately 6 miles west of Porthill, Idaho and about 20 miles northwest of Bonners Ferry, Idaho. The fire was ignited by lightning on July 7th. It is burning on a steep, north-facing slope in heavy timber with significant concentrations of dead and down fuels.The Northern Idaho Blue Team assumed command of the fire on August 12, 2026, at 6:00 am. A full suppression strategy will continue to be implemented utilizing direct and indirect tactics to protect critical values at-risk and minimize firefighter risk exposure."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "title": "ORFWF Wrights Spring",
-   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "unit": "Fremont-Winema National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
   },
   {
    "kind": "fire",
@@ -247,17 +258,6 @@
    "acres": 0,
    "federal": true,
    "description": "Current Evacuation Map Genasys I Current Evacuation Map Raptor I OR DOT TripCheck I Facebook Updates Sign-up for Emergency AlertsThe Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area.A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly sl"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
-   "title": "MTBDF Bobcat Lakes",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
   },
   {
    "kind": "fire",

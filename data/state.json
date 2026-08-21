@@ -1,14 +1,14 @@
 {
- "generated": "2026-08-20T22:47:56+00:00",
+ "generated": "2026-08-21T02:00:27+00:00",
  "count": {
-  "parks_under_alert": 183,
-  "full_closures": 3,
-  "fires": 25,
+  "parks_under_alert": 182,
+  "full_closures": 2,
+  "fires": 26,
   "fedreg_7d": 2,
   "red_flag": 4
  },
  "totals": {
-  "alerts_scanned": 628,
+  "alerts_scanned": 627,
   "candidates": 70
  },
  "closures": [
@@ -25,27 +25,9 @@
    "states": "PA",
    "title": "Site Closure for Utilities Improvement Project",
    "url": ""
-  },
-  {
-   "park": "Pu\u02bbukohol\u0101 Heiau National Historic Site",
-   "code": "puhe",
-   "states": "HI",
-   "title": "Park Closure \u2013 Hurricane Lala",
-   "url": ""
   }
  ],
  "fires": [
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "title": "UTMLF Black Canyon",
-   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "unit": "Manti-Lasal National Forest",
-   "state": "Utah",
-   "acres": 3264,
-   "federal": true,
-   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govSize: 3,264 acres | Start Date: July 30, 2026 | Cause: Lightning | Containment: 51% Total Resources: 5 Aircraft; 16 engines; 13 crews; 3 dozers; 547 personnelUpdated mapping completed yesterday resulted in a decrease in the reported size of the Black Canyon Fire and an increase in containment. Information gathered by a helicopter reconnaissance flight allowed firefighte"
-  },
   {
    "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/cogmf-gold-mountain-fire",
@@ -59,47 +41,14 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
-   "title": "MTLNF Cherry Peak",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
-   "unit": "Lolo National Forest",
-   "state": "Montana",
+   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "title": "UTMLF Black Canyon",
+   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "unit": "Manti-Lasal National Forest",
+   "state": "Utah",
    "acres": 0,
    "federal": true,
-   "description": "The Cherry Peak Fire was detected on the afternoon of August 18, 2026. The fire is burning in steep, rugged terrain with timber and grass. Initial fire activity included running and single tree torching. The fire is lightning caused and full suppression tactics are being implemented.The Lolo National Forest Type 3 Organization assumed command of the fire the morning of August 19.Resources ordered and/or supporting the incident: Module and engine crews, large air tankers (LAT), very large airtankers (VLAT), air attack, type one helicopters, type 2 IA crew, smoke jumpers, heli-rappelers, hotshot"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
-   "title": "MNSUF July 2026 Superior NF Wildfires",
-   "url": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
-   "unit": "Superior National Forest",
-   "state": "Minnesota",
-   "acres": 0,
-   "federal": true,
-   "description": "Notice: As of August 10, incident updates will only be published on Mondays, Wednesdays, and Fridays. On the evening of July 6, 2026, a storm system moved through the area with thunder and lightning and little precipitation. The following day, several small wildfires were reported. The Southern Area Complex Incident Management Team 1 is responsible for management of this firefighting effort.For information on Superior National Forest BWCAW openings and closures or fire restrictions, please see the Forest's Alerts webpage: https://www.fs.usda.gov/r09/superior/alertsThe Little Knife Fire is unde"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "title": "ORUMF Hagen Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "Current Evacuation Map Genasys I Current Evacuation Map Raptor I OR DOT TripCheck I Facebook Updates Sign-up for Emergency AlertsThe Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area.A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly sl"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "title": "ORUMF Paradise Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area. A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly slow wildfire suppression efforts. Remember: If you fly\u2026 we can\u2019t!"
+   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govUpdated mapping completed yesterday resulted in a decrease in the reported size of the Black Canyon Fire and an increase in containment. Information gathered by a helicopter reconnaissance flight allowed firefighters to develop a more precise map of the fire and identify remaining hot spots in the Black Canyon area. Helicopters used water bucket drops to cool identified"
   },
   {
    "kind": "fire",
@@ -114,14 +63,69 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "title": "ORFWF Wrights Spring",
-   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "unit": "Fremont-Winema National Forest",
+   "id": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
+   "title": "WANCP Luna Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
+   "unit": "North Cascades National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Luna Fire within the North Cascades National Park Service Complex started in a rock scree southwest of Luna Camp along Big Beaver Trail in steep, rough, and remote terrain. It was discovered on Thursday, July 2, following lightning storms on previous days. The Maine Incident Management Team was assigned to manage this fire beginning on Tuesday, August 4 after significant fire growth occurred. Command of the fire transitioned to Southern Area GRAY Team-1 on Monday, August 17.The Luna Fire is located approximately 12 miles southwest of the Border 2 Fire, also burning within North Cascades Na"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "title": "ORUMF Bologna Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
+   "unit": "Umatilla National Forest",
    "state": "Oregon",
    "acres": 0,
    "federal": true,
-   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "title": "MTFNF Skillet Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "unit": "Flathead National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/copsf-aspen-acres-fire",
+   "title": "COPSF Aspen Acres Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/copsf-aspen-acres-fire",
+   "unit": "Pike and San Isabel National Forest",
+   "state": "Colorado",
+   "acres": 0,
+   "federal": true,
+   "description": "The Aspen Acres Fire was first reported on June 29th at approximately 6:00am. The fire originated 10 miles northwest of Rye, Colorado in the area of the San Isabel National Forest.The Aspen Acres Fire experienced explosive growth due to record\u2011low fuel moisture levels and persistent red flag conditions during the week preceding and the days following ignition. The fire was driven by sustained winds over 40 mph, with gusts estimated up to 100 mph. It initially impacted the community of Beulah, Colorado, and later affected additional communities and areas across Custer, Pueblo, Fremont, and Huer"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "title": "ORUMF Hagen Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-hagen-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "Current Evacuation Map Genasys I Current Evacuation Map Raptor I OR DOT TripCheck I Facebook Updates Sign-up for Emergency AlertsThe Hagen Fire is burning in the Umatilla National Forest about 26 miles east of Pendleton, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area.A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly sl"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/calpf-timber-fire",
+   "title": "CALPF Timber Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/calpf-timber-fire",
+   "unit": "Los Padres National Forest",
+   "state": "California",
+   "acres": 0,
+   "federal": true,
+   "description": "THIS PAGE IS UPDATED TWICE DAILY.The Timber Fire was detected around 9:30 p.m. Saturday, August 8. After exhibiting moderate overnight growth, it was estimated to be about 45 acres by 7:30 a.m. Sunday, August 9. None of California's eight federal complex incident management teams are immediately available as they are either assigned to other incidents or on mandatory days off. California has strong interagency relationships and coordination; CAL FIRE Incident Management Team 1 is mobilizing and will receive its in-brief Monday afternoon and be delegated command of the fire soon thereafter.Nume"
   },
   {
    "kind": "fire",
@@ -133,6 +137,72 @@
    "acres": 0,
    "federal": true,
    "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "title": "ORFWF Wrights Spring",
+   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "unit": "Fremont-Winema National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) The fire is currently being managed Northwest Complex Incident Management Team 8."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "title": "MTBDF Moose Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
+   "title": "WANCP Border 2 Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wancp-border-2-fire",
+   "unit": "North Cascades National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "Following lightning storms on July 17, Border 1 Fire and Border 2 Fire were discovered within North Cascades National Park Service Complex along the U.S./Canada border, east of Ross Lake, in steep, rocky, and remote terrain. Fire activity increased due to elevated fire weather conditions Border 1 and Border 2 Fires combined on July 21, now known as the Border 2 Fire. The fire has crossed the international border into Canada (known as Hozomeen Mountain Wildfire) and east onto Okanogan-Wenatchee National Forest lands. The lightning-caused Border 2 Fire is being managed under a full-suppression s"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
+   "title": "MNSUF July 2026 Superior NF Wildfires",
+   "url": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
+   "unit": "Superior National Forest",
+   "state": "Minnesota",
+   "acres": 0,
+   "federal": true,
+   "description": "Notice: As of August 10, incident updates will only be published on Mondays, Wednesdays, and Fridays. On the evening of July 6, 2026, a storm system moved through the area with thunder and lightning and little precipitation. The following day, several small wildfires were reported. The Southern Area Complex Incident Management Team 1 is responsible for management of this firefighting effort.For information on Superior National Forest BWCAW openings and closures or fire restrictions, please see the Forest's Alerts webpage: https://www.fs.usda.gov/r09/superior/alertsThe Little Knife Fire is unde"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
+   "title": "MTLNF Cherry Peak",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
+   "unit": "Lolo National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Cherry Peak Fire was detected on the afternoon of August 18, 2026. The fire is burning in steep, rugged terrain with timber and grass. Initial fire activity included running and single tree torching. The fire is lightning caused and full suppression tactics are being implemented.The Lolo National Forest Type 3 Organization assumed command of the fire the morning of August 19.Resources ordered and/or supporting the incident: Module and engine crews, large air tankers (LAT), very large airtankers (VLAT), air attack, type one helicopters, type 2 IA crew, smoke jumpers, heli-rappelers, hotshot"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "title": "ORUMF Paradise Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/orumf-paradise-fire",
+   "unit": "Umatilla National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Paradise Fire is burning in the Umatilla National Forest approximately 18 Miles E of Milton-Freewater, Oregon. The fire began on July 16, 2026, following a lightning storm that moved through the area. A Temporary Flight Restriction (TFR) is currently in place over the fire to ensure the safety of firefighting aircraft operating on the incident. Firefighting aircraft and drones are a dangerous combination\u2014unauthorized drones in the vicinity can cause accidents or significantly slow wildfire suppression efforts. Remember: If you fly\u2026 we can\u2019t!"
   },
   {
    "kind": "fire",
@@ -202,28 +272,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "title": "MTFNF Skillet Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "unit": "Flathead National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
-   "title": "WAGPF Backbone",
-   "url": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
-   "unit": "Gifford Pinchot National Forest",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Backbone fire is in Gifford Pinchot National Forest, located 7 miles north-east of the town of Packwood, Washington. The Backbone was a lightning caused fire that started on August 5, 2026."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
    "title": "IDNCF Moose Mountain",
    "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
@@ -246,39 +294,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/calpf-timber-fire",
-   "title": "CALPF Timber Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/calpf-timber-fire",
-   "unit": "Los Padres National Forest",
-   "state": "California",
-   "acres": 0,
-   "federal": true,
-   "description": "THIS PAGE IS UPDATED TWICE DAILY.The Timber Fire was detected around 9:30 p.m. Saturday, August 8. After exhibiting moderate overnight growth, it was estimated to be about 45 acres by 7:30 a.m. Sunday, August 9. None of California's eight federal complex incident management teams are immediately available as they are either assigned to other incidents or on mandatory days off. California has strong interagency relationships and coordination; CAL FIRE Incident Management Team 1 is mobilizing and will receive its in-brief Monday afternoon and be delegated command of the fire soon thereafter.Nume"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
-   "title": "WANCP Luna Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
-   "unit": "North Cascades National Park",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Luna Fire within the North Cascades National Park Service Complex started in a rock scree southwest of Luna Camp along Big Beaver Trail in steep, rough, and remote terrain. It was discovered on Thursday, July 2, following lightning storms on previous days. The Maine Incident Management Team was assigned to manage this fire beginning on Tuesday, August 4 after significant fire growth occurred. Command of the fire transitioned to Southern Area GRAY Team-1 on Monday, August 17.The Luna Fire is located approximately 12 miles southwest of the Border 2 Fire, also burning within North Cascades Na"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "title": "MTBDF Moose Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
    "title": "COGMF Elk Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
@@ -298,17 +313,6 @@
    "acres": 0,
    "federal": true,
    "description": "The High Lava Fire located approximately 10 miles northwest of Stabler, Washington, continues to remain active. Multiple resources, including hand crews, engines, and heavy equipment, are aggressively engaging the fire under a full suppression strategy. Crews are improving roads, constructing dozer lines, and attacking the fire directly where it is safe to do so. Smoke will be visible near Stabler, WA, and surrounding communities. The High Lava Fire is burning in extremely challenging country, where near-vertical slopes and cliff bands make access difficult for firefighters. Crews remain focus"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "title": "ORUMF Bologna Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/orumf-bologna-fire",
-   "unit": "Umatilla National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "Bologna Fire, seven mile northeast of Kimberly, OR. Started July 16, 2026. The Oregon Department of Forestry (ODF) Complex Incident Management Team (CIMT) 3 took command of the Bologna Fire from a local Type-3 organization and the Cottonwood Fire from a Central Oregon Fire Management Service Team (COFMS) type-3 incident management team."
   }
  ],
  "fedreg": [

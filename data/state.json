@@ -1,11 +1,11 @@
 {
- "generated": "2026-08-22T07:02:30+00:00",
+ "generated": "2026-08-22T08:50:30+00:00",
  "count": {
   "parks_under_alert": 185,
   "full_closures": 2,
   "fires": 29,
   "fedreg_7d": 4,
-  "red_flag": 21
+  "red_flag": 19
  },
  "totals": {
   "alerts_scanned": 632,

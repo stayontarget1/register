@@ -1,11 +1,11 @@
 {
- "generated": "2026-08-22T03:10:07+00:00",
+ "generated": "2026-08-22T04:52:23+00:00",
  "count": {
   "parks_under_alert": 185,
   "full_closures": 2,
-  "fires": 28,
+  "fires": 29,
   "fedreg_7d": 2,
-  "red_flag": 24
+  "red_flag": 21
  },
  "totals": {
   "alerts_scanned": 632,
@@ -38,6 +38,94 @@
    "acres": 2000,
    "federal": true,
    "description": "The Gold Mountain Fire was discovered on June 27, 2026, at approximately 5:33 pm 2 miles northeast of Ouray, CO. Fire initially started burning in mixed conifer vegetation located on inaccessible terrain above the east side of Highway 550. Local, State, and Federal initial attack fire resources were ordered immediately. The fire spread quickly running up steep slopes. A local Type 3 Incident Management Team was assigned on June 27, 2026. Aviation resources were ordered throughout the next day, but high winds and terrain features shut down the use of aviation resources. Fire became very active,"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "title": "ORFWF Wrights Spring",
+   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
+   "unit": "Fremont-Winema National Forest",
+   "state": "Oregon",
+   "acres": 0,
+   "federal": true,
+   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) NW Team 7 assumed command of the fire August 21, 2026."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
+   "title": "NMSNF Frijoles Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
+   "unit": "Santa Fe National Forest",
+   "state": "New Mexico",
+   "acres": 0,
+   "federal": true,
+   "description": "The Frijoles Fire, which started August 4th due to a lightning strike, is burning in steep terrain 5 miles west of Sierra Mosca, 3 miles southeast of Cundiyo, NM. Firefighter and public safety are the number 1 objective and the fire is being handled as a full suppression incident.In order to facilitate safe and efficient suppression efforts the public is asked to avoid the area of the fire and the Santa Cruz Overlook Rd and Campground.Aviation operations in support of suppression efforts are occurring at Nambe Lake and Santa Cruz Lake. Please be aware of your surroundings while recreating in t"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
+   "title": "MTLNF Cherry Peak",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
+   "unit": "Lolo National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Cherry Peak Fire was detected on the afternoon of August 18, 2026. The fire is burning in steep, rugged terrain with timber and grass. Initial fire activity included running and single tree torching. The fire is lightning caused and full suppression tactics are being implemented.The Lolo National Forest Type 3 Organization assumed command of the fire the morning of August 19.Closures: For firefighter and public safety, Forest Service Road 420 is closed starting August 21 due to firefighting operations on the Cherry Peak Fire. The closure begins at the junction of Forest Service Road 420 an"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/idbof-crooked",
+   "title": "IDBOF Crooked",
+   "url": "http://inciweb.wildfire.gov/incident-information/idbof-crooked",
+   "unit": "Boise National Forest",
+   "state": "Idaho",
+   "acres": 0,
+   "federal": true,
+   "description": "Crooked Fire Update August 21, 2026 Firefighters continued to battle the 1038 acre Crooked Fire, located 14 mi. NE of Idaho City. The fire is being fought with a full suppression strategy with public and firefighter safety being the highest priorityThe fire continues to burn in a steep, rocky and heavily forested area. Rollout of burning debris, rocks and falling hazard trees are a constant challenge. Throughout the day crews continued to construct control lines around the fire and utilized existing road systems when able. They are being heavily supported by multiple aircraft including a const"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
+   "title": "WAOWF Little Giant Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
+   "unit": "Okanogan-Wenatchee National Forest",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "Little Giant Fire: It was started by lightning on July 15, is located 30 miles NW of Leavenworth, WA. It is in the Chiwawa River drainage on the Wenatchee River Ranger District of the Okanogan-Wenatchee National Forest. It was originally estimated at 5 acres. Rappellers were dispatched for initial attack, and a 21-person initial attack crew arrived on July 17. Minimal aerial support was available to support firefighters on the ground. Due to winds and increased fire behavior, as well as poor access in steep, inaccessible country, all firefighters disengaged and hiked out on July 18. Warm weath"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
+   "title": "WAGPF High Lava Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wagpf-high-lava-fire",
+   "unit": "Gifford Pinchot National Forest",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The High Lava Fire located approximately 10 miles northwest of Stabler, Washington, continues to remain active. Multiple resources, including hand crews, engines, and heavy equipment, are aggressively engaging the fire under a full suppression strategy. Crews are improving roads, constructing dozer lines, and attacking the fire directly where it is safe to do so. Smoke will be visible near Stabler, WA, and surrounding communities. The High Lava Fire is burning in extremely challenging country, where near-vertical slopes and cliff bands make access difficult for firefighters. Crews remain focus"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
+   "title": "WAMRP Grand Park 2 Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
+   "unit": "Mount Rainier National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Grand Park 2 Fire was reported Aug. 7 and is located approximately three miles north of the Sunrise Visitor Center in Mount Rainier National Park. Local resources managed initial and extended attack until Complex Incident Management Team Northwest 13 assumed command Aug. 11 in coordination with local, state, and federal agencies."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "title": "MTBDF Moose Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
   },
   {
    "kind": "fire",
@@ -126,17 +214,6 @@
    "acres": 0,
    "federal": true,
    "description": "THIS PAGE IS UPDATED TWICE DAILY.The Timber Fire was detected around 9:30 p.m. Saturday, August 8. After exhibiting moderate overnight growth, it was estimated to be about 45 acres by 7:30 a.m. Sunday, August 9. None of California's eight federal complex incident management teams are immediately available as they are either assigned to other incidents or on mandatory days off. California has strong interagency relationships and coordination; CAL FIRE Incident Management Team 1 is mobilizing and will receive its in-brief Monday afternoon and be delegated command of the fire soon thereafter.Nume"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
-   "title": "MTLNF Cherry Peak",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtlnf-cherry-peak",
-   "unit": "Lolo National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Cherry Peak Fire was detected on the afternoon of August 18, 2026. The fire is burning in steep, rugged terrain with timber and grass. Initial fire activity included running and single tree torching. The fire is lightning caused and full suppression tactics are being implemented.The Lolo National Forest Type 3 Organization assumed command of the fire the morning of August 19.Resources ordered and/or supporting the incident: Module and engine crews, large air tankers (LAT), very large airtankers (VLAT), air attack, type one helicopters, type 2 IA crew, smoke jumpers, heli-rappelers, hotshot"
   },
   {
    "kind": "fire",
@@ -250,17 +327,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "title": "ORFWF Wrights Spring",
-   "url": "http://inciweb.wildfire.gov/incident-information/orfwf-wrights-spring",
-   "unit": "Fremont-Winema National Forest",
-   "state": "Oregon",
-   "acres": 0,
-   "federal": true,
-   "description": "The Wrights Spring Fire was reported on Aug. 5, 2026, in the Fremont-Winema National Forest, south of Sprague River Highway and east of Chiloquin, Ore., between FS 5817 and Rd 22 (Switchback Rd.) NW Team 7 assumed command of the fire August 21, 2026."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/idipf-porcupine-fire",
    "title": "IDIPF Porcupine Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/idipf-porcupine-fire",
@@ -272,39 +338,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
-   "title": "WAOWF Little Giant Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/waowf-little-giant-fire",
-   "unit": "Okanogan-Wenatchee National Forest",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "Little Giant Fire: It was started by lightning on July 15, is located 30 miles NW of Leavenworth, WA. It is in the Chiwawa River drainage on the Wenatchee River Ranger District of the Okanogan-Wenatchee National Forest. It was originally estimated at 5 acres. Rappellers were dispatched for initial attack, and a 21-person initial attack crew arrived on July 17. Minimal aerial support was available to support firefighters on the ground. Due to winds and increased fire behavior, as well as poor access in steep, inaccessible country, all firefighters disengaged and hiked out on July 18. Warm weath"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
-   "title": "WAMRP Grand Park 2 Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/wamrp-grand-park-2-fire",
-   "unit": "Mount Rainier National Park",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Grand Park 2 Fire was reported Aug. 7 and is located approximately three miles north of the Sunrise Visitor Center in Mount Rainier National Park. Local resources managed initial and extended attack until Complex Incident Management Team Northwest 13 assumed command Aug. 11 in coordination with local, state, and federal agencies."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
-   "title": "NMSNF Frijoles Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/nmsnf-frijoles-fire",
-   "unit": "Santa Fe National Forest",
-   "state": "New Mexico",
-   "acres": 0,
-   "federal": true,
-   "description": "The Frijoles Fire, which started August 4th due to a lightning strike, is burning in steep terrain 5 miles west of Sierra Mosca, 3 miles southeast of Cundiyo, NM. Firefighter and public safety are the number 1 objective and the fire is being handled as a full suppression incident.In order to facilitate safe and efficient suppression efforts the public is asked to avoid the area of the fire and the Santa Cruz Overlook Rd and Campground.Aviation operations in support of suppression efforts are occurring at Nambe Lake and Santa Cruz Lake. Please be aware of your surroundings while recreating in t"
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/waowf-ptarmigan-fire",
    "title": "WAOWF Ptarmigan Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/waowf-ptarmigan-fire",
@@ -313,28 +346,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Ptarmigan Fire was discovered on July 17th, 2026. That morning it was called in by a member of the public and Goat Peak Lookout, and confirmed by a reconnaissance flight over the Pasayten Wilderness. It is located 20 miles NW of Mazama, Washington, near the Canadian border. It is burning in the old Tatoosh fire area. Smokejumpers staffed the fire on July 18th, and have conducted historic structure protection in the area. An Okanogan-Wenatchee Type 3 team was assigned to manage the fire on July 25th, 2026 after significant growth occurred. The fire moved southward to burn around the Pasayte"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
-   "title": "MTFNF Silvertip Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-silvertip-fire",
-   "unit": "Flathead National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Silvertip Fire was started by lightning in the Spotted Bear Ranger District of the Flathead National Forest, approximately 15 miles southeast of Spotted Bear Ranger Station, near Silvertip Mountain. The fire was detected by aircraft on July 24, 2026 while conducting recon on another reported fire. The fire is burning in heavy timber on steep slopes with standing dead and down trees.A Forest Area Closure is in place for the majority of the upper Spotted Bear River drainage for public and firefighter safety: https://www.fs.usda.gov/r01/flathead/alertsReconnaissance flights continue over the "
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "title": "MTBDF Moose Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-moose-fire",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The lightning-caused Moose Fire was detected July 26 approximately 24 miles southwest of Philipsburg, Montana. The fire is burning in timber and areas of heavy dead and downed fuels with changing weather conditions influencing fire behavior throughout the incident. Previously burned areas have also influenced the fire\u2019s growth and behavior across the landscape. Firefighters remain actively engaged across the incident, working to reduce risk and protect the public and nearby communities."
   }
  ],
  "fedreg": [

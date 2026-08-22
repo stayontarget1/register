@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-22T01:53:18+00:00",
+ "generated": "2026-08-22T03:10:07+00:00",
  "count": {
   "parks_under_alert": 185,
   "full_closures": 2,
@@ -30,17 +30,6 @@
  "fires": [
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "title": "UTMLF Black Canyon",
-   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
-   "unit": "Manti-Lasal National Forest",
-   "state": "Utah",
-   "acres": 3264,
-   "federal": true,
-   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govSize: 3,264 acres | Start Date: July 30, 2026 | Cause: Lightning | Containment: 61% Total Resources: 4 Aircraft; 10 engines; 13 crews; 1 dozers; 533 personnelWildland firefighters responded to a spot fire on the northwestern edge of the Black Canyon Fire today after outflow winds threw embers across the fireline. Crews were diverted immediately to the spot fire and work"
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/cogmf-gold-mountain-fire",
    "title": "COGMF Gold Mountain Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/cogmf-gold-mountain-fire",
@@ -49,6 +38,83 @@
    "acres": 2000,
    "federal": true,
    "description": "The Gold Mountain Fire was discovered on June 27, 2026, at approximately 5:33 pm 2 miles northeast of Ouray, CO. Fire initially started burning in mixed conifer vegetation located on inaccessible terrain above the east side of Highway 550. Local, State, and Federal initial attack fire resources were ordered immediately. The fire spread quickly running up steep slopes. A local Type 3 Incident Management Team was assigned on June 27, 2026. Aviation resources were ordered throughout the next day, but high winds and terrain features shut down the use of aviation resources. Fire became very active,"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
+   "title": "COGMF Elk Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
+   "unit": "Grand Mesa Uncompahgre and Gunnison National Forests",
+   "state": "Colorado",
+   "acres": 0,
+   "federal": true,
+   "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
+   "title": "IDNCF Moose Mountain",
+   "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
+   "unit": "Nez Perce - Clearwater National Forests",
+   "state": "Idaho",
+   "acres": 0,
+   "federal": true,
+   "description": "Moose Mountain is a wildfire started by lightning and burning approximately 4 miles north of Kelly Forks Campground and Guard Station. The Moose Mountain Fire has burned down to the North Fork of the Clearwater River prompting a closure of that section of Forest Road #250 in Black Canyon."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
+   "title": "WAGPF Backbone",
+   "url": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
+   "unit": "Gifford Pinchot National Forest",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Backbone fire is in Gifford Pinchot National Forest, located 7 miles north-east of the town of Packwood, Washington. The Backbone was a lightning caused fire that started on August 5, 2026."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "title": "MTFNF Skillet Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "unit": "Flathead National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/waowf-three-queens",
+   "title": "WAOWF Three Queens",
+   "url": "http://inciweb.wildfire.gov/incident-information/waowf-three-queens",
+   "unit": "Okanogan-Wenatchee National Forest",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "Three Queens Facebook (frequent video updates).The Three Queens Fire is located on Okanogan Wenatchee National Forest, six miles east of Snoqualmie Pass, in Kittitas County. The fire is burning primarily in high elevation subalpine fir stringers above Lake Kachess. Wind driven fire behavior persists as strong winds push flames across fuels. Fire activity has increased in areas where fuels, wind, and topography have aligned, producing periods of faster fire spread. This mountainous region also exhibits extreme slopes, unstable terrain and rolling material. Crews are monitoring these conditions "
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
+   "title": "WANCP Luna Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
+   "unit": "North Cascades National Park",
+   "state": "Washington",
+   "acres": 0,
+   "federal": true,
+   "description": "The Luna Fire within the North Cascades National Park Service Complex started in a rock scree southwest of Luna Camp along Big Beaver Trail in steep, rough, and remote terrain. It was discovered on Thursday, July 2, following lightning storms on previous days. The Maine Incident Management Team was assigned to manage this fire beginning on Tuesday, August 4 after significant fire growth occurred. Command of the fire transitioned to Southern Area GRAY Team-1 on Monday, August 17; and to a local Type-3 organization on Saturday, August 22.The Luna Fire is located approximately 12 miles southwest "
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "title": "UTMLF Black Canyon",
+   "url": "http://inciweb.wildfire.gov/incident-information/utmlf-black-canyon",
+   "unit": "Manti-Lasal National Forest",
+   "state": "Utah",
+   "acres": 0,
+   "federal": true,
+   "description": "Daily Update | MapPhone: (435) 485-5631 (8 a.m. \u2013 8 p.m.)InciWeb: https://inciweb.wildfire.gov/incident-information/utmlf-black-canyonFacebook: https://www.facebook.com/mantilasalnationalforestEmail: 2026.blackcanyon@firenet.govWildland firefighters responded to a spot fire on the northwestern edge of the Black Canyon Fire today after outflow winds threw embers across the fireline. Crews were diverted immediately to the spot fire and worked to contain it. Helicopters also conducted bucket drops to support firefighters working on the spot fire.Backhaul operations have also begun on the fire. Ba"
   },
   {
    "kind": "fire",
@@ -82,17 +148,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Upper Smith Fire is located within the Smith Creek drainage, approximately 6 miles west of Porthill, Idaho and about 20 miles northwest of Bonners Ferry, Idaho. The fire was ignited by lightning on July 7th. It is burning on a steep, north-facing slope in heavy timber with significant concentrations of dead and down fuels.The Northern Idaho Blue Team assumed command of the fire on August 12, 2026, at 6:00 am. A full suppression strategy will continue to be implemented utilizing direct and indirect tactics to protect critical values at-risk and minimize firefighter risk exposure."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
-   "title": "COGMF Elk Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
-   "unit": "Grand Mesa Uncompahgre and Gunnison National Forests",
-   "state": "Colorado",
-   "acres": 0,
-   "federal": true,
-   "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
   },
   {
    "kind": "fire",
@@ -151,17 +206,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "title": "MTFNF Skillet Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "unit": "Flathead National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
    "title": "MNSUF July 2026 Superior NF Wildfires",
    "url": "http://inciweb.wildfire.gov/incident-information/mnsuf-july-2026-superior-nf-wildfires",
@@ -217,17 +261,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/waowf-three-queens",
-   "title": "WAOWF Three Queens",
-   "url": "http://inciweb.wildfire.gov/incident-information/waowf-three-queens",
-   "unit": "Okanogan-Wenatchee National Forest",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "Three Queens Facebook (frequent video updates).The Three Queens Fire is located on Okanogan Wenatchee National Forest, six miles east of Snoqualmie Pass, in Kittitas County. The fire is burning primarily in high elevation subalpine fir stringers above Lake Kachess. Wind driven fire behavior persists as strong winds push flames across fuels. Fire activity has increased in areas where fuels, wind, and topography have aligned, producing periods of faster fire spread. This mountainous region also exhibits extreme slopes, unstable terrain and rolling material. Crews are monitoring these conditions "
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/idipf-porcupine-fire",
    "title": "IDIPF Porcupine Fire",
    "url": "http://inciweb.wildfire.gov/incident-information/idipf-porcupine-fire",
@@ -236,17 +269,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Porcupine Fire was discovered on the evening of July 24th and is believed to be a holdover fire from a previous lightning storm. It is burning in steep terrain with cliffs, rock screes, and subalpine fir, located approximately two miles east of Porcupine Lake. People who live and recreate in the area should remain aware of this incident and the potential for changing conditions. Firefighting personnel will be using Porcupine Lake Trail #642 to access the fire area. Lake Pend Oreille and Porcupine Lake will act as a dip site for air resources. Exercise caution and yield to firefighting airc"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
-   "title": "WANCP Luna Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/wancp-luna-fire",
-   "unit": "North Cascades National Park",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Luna Fire within the North Cascades National Park Service Complex started in a rock scree southwest of Luna Camp along Big Beaver Trail in steep, rough, and remote terrain. It was discovered on Thursday, July 2, following lightning storms on previous days. The Maine Incident Management Team was assigned to manage this fire beginning on Tuesday, August 4 after significant fire growth occurred. Command of the fire transitioned to Southern Area GRAY Team-1 on Monday, August 17.The Luna Fire is located approximately 12 miles southwest of the Border 2 Fire, also burning within North Cascades Na"
   },
   {
    "kind": "fire",
@@ -291,28 +313,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Ptarmigan Fire was discovered on July 17th, 2026. That morning it was called in by a member of the public and Goat Peak Lookout, and confirmed by a reconnaissance flight over the Pasayten Wilderness. It is located 20 miles NW of Mazama, Washington, near the Canadian border. It is burning in the old Tatoosh fire area. Smokejumpers staffed the fire on July 18th, and have conducted historic structure protection in the area. An Okanogan-Wenatchee Type 3 team was assigned to manage the fire on July 25th, 2026 after significant growth occurred. The fire moved southward to burn around the Pasayte"
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
-   "title": "WAGPF Backbone",
-   "url": "http://inciweb.wildfire.gov/incident-information/wagpf-backbone",
-   "unit": "Gifford Pinchot National Forest",
-   "state": "Washington",
-   "acres": 0,
-   "federal": true,
-   "description": "The Backbone fire is in Gifford Pinchot National Forest, located 7 miles north-east of the town of Packwood, Washington. The Backbone was a lightning caused fire that started on August 5, 2026."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
-   "title": "IDNCF Moose Mountain",
-   "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
-   "unit": "Nez Perce - Clearwater National Forests",
-   "state": "Idaho",
-   "acres": 0,
-   "federal": true,
-   "description": "Moose Mountain is a wildfire started by lightning and burning approximately 4 miles north of Kelly Forks Campground and Guard Station. The Moose Mountain Fire has burned down to the North Fork of the Clearwater River prompting a closure of that section of Forest Road #250 in Black Canyon."
   },
   {
    "kind": "fire",

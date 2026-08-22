@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-22T04:52:23+00:00",
+ "generated": "2026-08-22T07:02:30+00:00",
  "count": {
   "parks_under_alert": 185,
   "full_closures": 2,
   "fires": 29,
-  "fedreg_7d": 2,
+  "fedreg_7d": 4,
   "red_flag": 21
  },
  "totals": {
@@ -351,6 +351,16 @@
  "fedreg": [
   {
    "kind": "fedreg",
+   "id": "https://www.federalregister.gov/documents/2026/08/24/2026-17198/gulf-islands-national-seashore-personal-watercraft",
+   "agency": "NPS",
+   "title": "Gulf Islands National Seashore; Personal Watercraft",
+   "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17198/gulf-islands-national-seashore-personal-watercraft",
+   "date": "2026-08-24",
+   "type": "Rule",
+   "description": "The National Park Service revises special regulations governing the use of personal watercraft at Gulf Islands National Seashore. This rule reduces the distance of flat wake speed zones from certain shorelines and codifies existing closures at West Petit Bois Island and the Fort Pickens ferry pier."
+  },
+  {
+   "kind": "fedreg",
    "id": "https://www.federalregister.gov/documents/2026/08/21/2026-17052/proposed-plan-of-operations-joshua-tree-national-park-ca",
    "agency": "NPS",
    "title": "Proposed Plan of Operations; Joshua Tree National Park, CA",
@@ -358,6 +368,16 @@
    "date": "2026-08-21",
    "type": "Notice",
    "description": "The National Park Service is giving notice to the public that First Class Miners Inc. has filed a proposed plan to use personal vehicles on two roads within Joshua Tree National Park to reach mining claims located outside the park."
+  },
+  {
+   "kind": "fedreg",
+   "id": "https://www.federalregister.gov/documents/2026/08/24/2026-17211/travel-management-national-forest-system-lands",
+   "agency": "USFS",
+   "title": "Travel Management; National Forest System Lands",
+   "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17211/travel-management-national-forest-system-lands",
+   "date": "2026-08-24",
+   "type": "Proposed Rule",
+   "description": "The U.S. Department of Agriculture (USDA) is initiating an environmental impact statement and rulemaking to revise the Forest Service's travel management regulations, 36 CFR part 212. The proposed action would establish a uniform national policy favoring increased access while simplifying regulatory requirements and preserving local decision-making. The proposed access rule would establish a national policy with a presumption that existing roads, trails, airfields, trailheads, and other access r"
   },
   {
    "kind": "fedreg",

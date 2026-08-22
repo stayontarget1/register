@@ -1,11 +1,11 @@
 {
- "generated": "2026-08-22T10:43:04+00:00",
+ "generated": "2026-08-22T13:03:23+00:00",
  "count": {
   "parks_under_alert": 185,
   "full_closures": 2,
   "fires": 29,
   "fedreg_7d": 4,
-  "red_flag": 19
+  "red_flag": 17
  },
  "totals": {
   "alerts_scanned": 632,
@@ -38,6 +38,39 @@
    "acres": 2000,
    "federal": true,
    "description": "The Gold Mountain Fire was discovered on June 27, 2026, at approximately 5:33 pm 2 miles northeast of Ouray, CO. Fire initially started burning in mixed conifer vegetation located on inaccessible terrain above the east side of Highway 550. Local, State, and Federal initial attack fire resources were ordered immediately. The fire spread quickly running up steep slopes. A local Type 3 Incident Management Team was assigned on June 27, 2026. Aviation resources were ordered throughout the next day, but high winds and terrain features shut down the use of aviation resources. Fire became very active,"
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
+   "title": "COGMF Elk Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
+   "unit": "Grand Mesa Uncompahgre and Gunnison National Forests",
+   "state": "Colorado",
+   "acres": 0,
+   "federal": true,
+   "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
+   "title": "MTBDF Bobcat Lakes",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
+   "unit": "Beaverhead-Deerlodge National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
+  },
+  {
+   "kind": "fire",
+   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "title": "MTFNF Skillet Fire",
+   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
+   "unit": "Flathead National Forest",
+   "state": "Montana",
+   "acres": 0,
+   "federal": true,
+   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
   },
   {
    "kind": "fire",
@@ -129,17 +162,6 @@
   },
   {
    "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
-   "title": "COGMF Elk Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/cogmf-elk-fire",
-   "unit": "Grand Mesa Uncompahgre and Gunnison National Forests",
-   "state": "Colorado",
-   "acres": 0,
-   "federal": true,
-   "description": "The 2026 Elk Fire started by lighting on 7-9-2026. The fire continues to burn in remote, rugged wilderness terrain where steep slopes, limited access, and complex terrain present significant risks to firefighters. Because of these conditions, firefighters are using indirect suppression tactics around the perimeter, allowing crew to work safely while establishing a secure containment footprint. Crews are leveraging natural barriers, roads, and strategic landscape features to build firelines and protect values at risk. Firefighter safety remains the top priority."
-  },
-  {
-   "kind": "fire",
    "id": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
    "title": "IDNCF Moose Mountain",
    "url": "http://inciweb.wildfire.gov/incident-information/idncf-moose-mountain",
@@ -159,17 +181,6 @@
    "acres": 0,
    "federal": true,
    "description": "The Backbone fire is in Gifford Pinchot National Forest, located 7 miles north-east of the town of Packwood, Washington. The Backbone was a lightning caused fire that started on August 5, 2026."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "title": "MTFNF Skillet Fire",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtfnf-skillet-fire",
-   "unit": "Flathead National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "The Skillet Fire was detected in the Tally Lake Ranger District of the Flathead National Forest, roughly 15 miles from Olney, MT in the Bowen Creek area. The fire was reported in the afternoon of July 29, 2026. The fire is burning in heavy timber and dead and down trees. The fire crossed the Kootenai National Forest boundary on July 30. A local Type 3 fire management organization assumed command of the fire on August 18, 2026.All EVACUATION WARNINGS have been lifted and all areas are now CLEAR."
   },
   {
    "kind": "fire",
@@ -269,17 +280,6 @@
    "acres": 0,
    "federal": true,
    "description": "Located approximately 7.5 miles southeast of Wisdom, the fire was initially reported at 1:45 pm on August 1, 2026 and was estimated at 40 acres. Fire behavior was crowning and torching in live green and dead and down subalpine fir."
-  },
-  {
-   "kind": "fire",
-   "id": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
-   "title": "MTBDF Bobcat Lakes",
-   "url": "http://inciweb.wildfire.gov/incident-information/mtbdf-bobcat-lakes",
-   "unit": "Beaverhead-Deerlodge National Forest",
-   "state": "Montana",
-   "acres": 0,
-   "federal": true,
-   "description": "Located approximately 12 miles east of Wisdom, the fire was reported around 2:20 p.m. on July 31 at an estimated six acres and quickly grew in size due to windy and dry conditions. The fire is burning in heavy dead and downed fuels and thick timber."
   },
   {
    "kind": "fire",
